@@ -65,6 +65,7 @@ pre {
 */
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 /**
@@ -84,6 +85,11 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -316,10 +322,45 @@ template {
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
+  font-weight: 600;
+  font-family: "Alumni Sans";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-600.woff2") format("woff2"), url("../fonts/alumni-sans-600.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/alumni-sans-700.woff2") format("woff2"), url("../fonts/alumni-sans-700.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/alumni-sans-800.woff2") format("woff2"), url("../fonts/alumni-sans-800.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-300.woff2") format("woff2"), url("../fonts/roboto-condensed-300.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-400.woff2") format("woff2"), url("../fonts/roboto-condensed-400.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-700.woff2") format("woff2"), url("../fonts/roboto-condensed-700.woff") format("woff");
 }
 *,
 *::before,
@@ -465,12 +506,18 @@ button,
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
-.wrapper .header,
-.wrapper .footer {
+.wrapper header,
+.wrapper footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+.wrapper a {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none;
+  color: inherit;
 }
 .wrapper main {
   -webkit-box-flex: 1;
@@ -1205,6 +1252,115 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.main-header {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.main-header__container {
+  width: 100%;
+  padding: 30px 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199px) {
+  .main-header__container {
+    padding: 40px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .main-header__container {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-header__logo svg {
+    width: 82px;
+    height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .main-header__logo svg {
+    width: 70px;
+    height: 24px;
+  }
+}
+
+.main-header__item {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  letter-spacing: 0.02em;
+  max-width: 160px;
+}
+@media (max-width: 1199px) {
+  .main-header__item {
+    font-size: 24px;
+    line-height: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .main-header__item {
+    font-size: 20px;
+  }
+}
+
+.main-header__item a {
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .main-header__item a:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+.main-header__item a.focus-visible:focus {
+  opacity: 0.7;
+}
+.main-header__item a.focus-visible:active {
+  opacity: 0.3;
+}
+
+.hero {
+  min-width: 320px;
+  min-height: 658px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 122px 50px;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+@media (max-width: 1199px) {
+  .hero {
+    padding: 45px 82px;
+    min-height: 554px;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    padding: 80px 15px;
+    min-height: 490px;
+  }
 }
 
 /* @mixin hover-focus {
