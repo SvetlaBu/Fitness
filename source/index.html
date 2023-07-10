@@ -24,23 +24,31 @@
           </p>
         </nav>
       </header>
-      <main>
-        <section class="hero">
-          <h1 class="hero__title">Фитнес центр</h1>
-          <b>Омск</b>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <a href="">Тренажёрный зал</a>
-            </li>
-            <li class="hero__item">
-              <a href="">Групповые занятия</a>
-            </li>
-            <li class="hero__item">
-              <a href="">Кардио-зона</a>
-            </li>
-          </ul>
-          <a class="hero__button" href="#">Купить абонемент</a>
-        </section>
+      <main class="main-page">
+        <div class="hero">
+          <section class="hero__wrapper">
+            <b>Омск</b>
+            <h1 class="hero__title">Фитнес центр</h1>
+            <ul class="hero__list">
+              <li class="hero__item">
+                <a href="#">Тренажёрный зал</a>
+              </li>
+              <li class="hero__item">
+                <a href="#">Групповые занятия</a>
+              </li>
+              <li class="hero__item">
+                <a href="#">Кардио-зона</a>
+              </li>
+            </ul>
+            <a class="hero__button" href="#">Купить абонемент</a>
+            <picture>
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/superman-tablet.webp, img/superman-tablet@2.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/superman-tablet.jpg, img/superman-tablet@2.jpg 2x">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/superman-desktopwebp, img/superman-desktop@2.webp 2x">
+              <img width="500" height="556" src="img/superman-desktop.jpg" srcset="img/superman-desktop@2.jpg" alt="Фото атлетичного человека в обтягивающем костюме супермена.">
+            </picture>
+          </section>
+        </div>
       </main>
       <footer class="main-footer">
         <div class="container">
@@ -71,7 +79,7 @@
           <ul class="social">
             <li class="social__item">
               <a class="social__link">
-                <svg width="25" height="25" aria-label="Наша страница ВКонтакте.">
+                <svg width="16" height="16" aria-label="Наша страница ВКонтакте.">
                   <use xlink:href="img/sprite/sprite.svg#vk"></use>
                 </svg>
               </a>

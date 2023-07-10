@@ -1,16 +1,32 @@
 .main-footer {
   width: 100%;
   background-color: #030a1a;
+  position: relative;
 }
 
 .main-footer .logo {
   width: 88px;
+  display: block;
 
   @include vp-1199 {
     width: 82px;
   }
 
   @include vp-767 {
-    width: 68px;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+  }
+}
+
+.main-footer .container {
+  padding: 30px 96px;
+
+  @include vp-1199 {
+    padding: 40px 36px 54px 45px;
+  }
+
+  @include vp-767 {
+    padding: 10px;
   }
 }

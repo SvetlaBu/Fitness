@@ -1,9 +1,14 @@
 .social {
   @include flex;
+  justify-content: space-between;
 }
 
 .social li {
-  margin: 10px;
+  margin: 6px;
+
+  @include vp-1199 {
+    margin: 5.5px;
+  }
 }
 
 .social__link {
