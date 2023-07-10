@@ -1,0 +1,16 @@
+.main-footer {
+  width: 100%;
+  background-color: #030a1a;
+}
+
+.main-footer .logo {
+  width: 88px;
+
+  @include vp-1199 {
+    width: 82px;
+  }
+
+  @include vp-767 {
+    width: 68px;
+  }
+}

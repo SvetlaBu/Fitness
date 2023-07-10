@@ -1,0 +1,13 @@
+.social {
+  @include flex;
+}
+
+.social li {
+  margin: 10px;
+}
+
+.social__link {
+  padding: 10px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+}
