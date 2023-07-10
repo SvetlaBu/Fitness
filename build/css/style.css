@@ -1398,6 +1398,49 @@ button,
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 600px;
+          flex: 0 1 600px;
+}
+
+.nav-site ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-site li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.nav-site .nav-site__link {
+  padding: 10px;
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nav-site .nav-site__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 76%;
+  height: 1px;
+  background-color: #ffffff;
+  top: 30px;
+  left: 10px;
+}
+.nav-site .nav-site__link:focus {
+  outline: 1px solid #ffffff;
+}
+.nav-site .nav-site__link:disabled {
+  opacity: 0.4;
 }
 
 .social {
@@ -1413,12 +1456,42 @@ button,
 }
 
 .social__link {
-  padding: 10px;
+  display: block;
+  padding: 13px;
   background-color: #ffffff;
+  color: #030a1a;
   border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .social__link:hover:not(.focus-visible) {
+    background-color: #103aae;
+    color: #ffffff;
+  }
+}
+.social__link.focus-visible:focus {
+  background-color: #103aae;
+  color: #ffffff;
+}
+.social__link:active {
+  background-color: #102654;
+  color: #ffffff;
+}
+.social__link:disabled {
+  background-color: #ffffff;
+  color: #030a1a;
+  opacity: 0.3;
 }
 
-/* @mixin hover-focus {
+.social__link svg {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+} /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;

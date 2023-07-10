@@ -85,6 +85,12 @@
   flex-wrap: wrap;
 }
 
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 // Mobile first
 
 // @mixin vp-375 {

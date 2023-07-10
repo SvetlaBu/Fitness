@@ -7,7 +7,32 @@
 }
 
 .social__link {
-  padding: 10px;
+  display: block;
+  padding: 13px;
   background-color: $color-default-white;
+  color: #030a1a;
   border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+
+  @include hover-focus {
+    background-color: #103aae;
+    color: $color-default-white;
+  }
+
+  &:active {
+    background-color: #102654;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    background-color: $color-default-white;
+    color: #030a1a;
+    opacity: 0.3;
+  }
+}
+
+.social__link svg {
+  @include center;
+  position: absolute;
 }
