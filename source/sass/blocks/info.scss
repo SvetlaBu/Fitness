@@ -20,14 +20,13 @@
 
 
   @include vp-1199 {
-    padding-top: 100px 45px;
+    padding: 96px 100px 103px 130px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
   }
 
   @include vp-767 {
     max-width: 767px;
-    padding: 63px 0 70px;
+    padding: 0;
   }
 }
 
@@ -40,6 +39,11 @@
     width: 100%;
     margin-bottom: 100px;
   }
+
+  @include vp-767 {
+    margin-bottom: 0;
+    padding: 54px 26px 40px 15px;
+  }
 }
 
 .info__title {
@@ -51,6 +55,21 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 0;
+    text-align: start;
+    margin-left: 112px;
+    letter-spacing: 0.05em;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .info__text b {
@@ -60,6 +79,18 @@
   line-height: 1.5;
   margin-bottom: 40px;
   display: block;
+
+  @include vp-1199 {
+    text-align: start;
+    margin-bottom: 32px;
+    margin-left: 112px;
+    letter-spacing: 0;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .info__text p {
@@ -68,6 +99,10 @@
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 6px;
+
+  @include vp-1199 {
+    text-align: start;
+  }
 }
 
 .info__add {
@@ -86,7 +121,17 @@
   @include vp-1199 {
     grid-row: 2/-1;
     grid-column: 1/-1;
-    margin-top: 0;
+    margin-top: 200px;
+    width: 266px;
+    height: 167px;
+    margin-left: -36px;
+    justify-self: center;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0;
+    margin-top: 340px;
   }
 }
 
@@ -103,6 +148,11 @@
   border-bottom: 2px solid rgba(0, 61, 133, 0.2);
   border-left: 2px solid rgba(184, 0, 39, 0.2);
   border-right: 2px solid rgba(0, 61, 133, 0.2);
+
+  @include vp-1199 {
+    width: 78px;
+    height: 78px;
+  }
 
   @include hover-focus {
     display: none;
@@ -122,13 +172,13 @@
   position: absolute;
   background-color: rgba(20, 54, 122, 0.5);
   top: 0;
-  width: 364px;
-  height: 228px;
+  width: 100%;
+  height: 100%;
 }
 
 .info__preview {
-  width: 364px;
-  height: 228px;
+  width: 100%;
+  height: 100%;
 }
 
 .info__background {
@@ -142,13 +192,13 @@
   @include vp-1199 {
     width: 678px;
     height: 345px;
-    top: 600px;
+    top: 330px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   @include vp-767 {
-    width: 280px;
-    height: 200px;
+    width: 100%;
+    max-height: 313px;
   }
 }

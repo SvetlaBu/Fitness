@@ -73,12 +73,16 @@
   border-radius: 50%;
   z-index: 2;
 
+  @include vp-1199 {
+    padding: 20px;
+  }
+
   @include hover-focus {
     background: $color-default-white;
     color: $color-sapphire;
     opacity: 1;
     outline: 2px solid $color-sapphire;
-    outline-offset: 7px;
+    outline-offset: 11px;
   }
 
   &:active {
