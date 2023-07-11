@@ -20,6 +20,7 @@
 
 .nav-site ul {
   @include flex;
+  @include cleaning;
   justify-content: space-between;
   column-gap: 20px;
 
@@ -36,6 +37,7 @@
 }
 
 .nav-site li {
+  @include cleaning;
   flex: 0 0 auto;
 }
 

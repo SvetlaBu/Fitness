@@ -1,9 +1,11 @@
 .social {
   @include flex;
+  @include cleaning;
   justify-content: space-between;
 }
 
 .social li {
+  @include cleaning;
   margin: 6px;
 
   @include vp-1199 {

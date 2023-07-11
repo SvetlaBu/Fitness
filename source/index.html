@@ -27,7 +27,6 @@
       <main class="main-page">
         <div class="hero">
           <section class="hero__wrapper">
-            <b>Омск</b>
             <h1 class="hero__title">Фитнес центр</h1>
             <ul class="hero__list">
               <li class="hero__item">
@@ -40,13 +39,47 @@
                 <a href="#">Кардио-зона</a>
               </li>
             </ul>
-            <a class="hero__button" href="#">Купить абонемент</a>
+            <a class="btn btn--hero" href="#">Купить абонемент</a>
             <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/superman-desktop.webp, img/superman-desktop@2.webp 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/superman-tablet.webp, img/superman-tablet@2.webp 2x">
               <source media="(min-width: 768px)" srcset="img/superman-tablet.jpg, img/superman-tablet@2.jpg 2x">
-              <source media="(min-width: 1200px)" type="image/webp" srcset="img/superman-desktopwebp, img/superman-desktop@2.webp 2x">
               <img width="500" height="556" src="img/superman-desktop.jpg" srcset="img/superman-desktop@2.jpg" alt="Фото атлетичного человека в обтягивающем костюме супермена.">
             </picture>
+          </section>
+          <section class="info">
+            <div class="container">
+              <div class="info__text">
+                <h2 class="info__title">Тренажерный зал</h2>
+                <span>Просторный зал площадью 900 кв/м</span>
+                <p>Supergym самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+                <div class="info__par-hidden">
+                  <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+                </div>
+              </div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop.webp, img/gym-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet.webp, img/gym-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/gym-mobile.webp, img/gym-mobile@2.webp 2x">
+                <img class="info__pic" width="320" height="313" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2.jpg" alt="Светлый зал со спортивыми тренажерами.">
+              </picture>
+              <div class="info__video" id="video">
+                <a class="info__link" href="https://youtu.be/9TZXsZItgdw" target="_blank" id="video-on">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-gym-desktop.webp, img/video-gym-desktop@2.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/video-gym-tablet.webp, img/video-gym-tablet@2.webp 2x">
+                    <source type="image/webp" srcset="img/video-gym-mobile.webp, img/video-gym-mobile@2.webp 2x">
+                    <img class="info__preview" width="320" height="167" src="img/video-gym-mobile.jpg" srcset="img/video-gym-mobile@2.jpg" alt="Видео-постер.">
+                  </picture>
+                </a>
+                <button class="info__button" type="button" id="video-button">
+                  <span class="visually-hidden">Кнопка включения видео</span>
+                  <svg width="13" height="15">
+                    <use xlink:href="img/sprite/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </section>
         </div>
       </main>
@@ -79,7 +112,7 @@
           <ul class="social">
             <li class="social__item">
               <a class="social__link">
-                <svg width="16" height="16" aria-label="Наша страница ВКонтакте.">
+                <svg width="25" height="25" aria-label="Наша страница ВКонтакте.">
                   <use xlink:href="img/sprite/sprite.svg#vk"></use>
                 </svg>
               </a>

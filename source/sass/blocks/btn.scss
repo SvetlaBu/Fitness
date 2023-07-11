@@ -1,6 +1,12 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  font-size: 12px;
+  padding: 14px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-align: center;
+
+  outline: none;
 
   color: $color-default-white;
 
@@ -22,5 +28,37 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+}
+
+.btn--hero {
+  border: 4px solid $color-default-white;
+  background-color: $color-transparent;
+  font-weight: 700;
+  outline: none;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &:disabled {
+    background-color: $color-transparent;
+    color: $color-default-white;
+    opacity: 0.5;
+  }
+
+  @include vp-767 {
+    grid-column: 1/3;
   }
 }
