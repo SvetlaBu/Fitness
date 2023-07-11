@@ -62,3 +62,33 @@
     grid-column: 1/3;
   }
 }
+
+.btn--info {
+  position: absolute;
+  transition: $trans-default;
+
+  @include center;
+  padding: 25px;
+  background: $linear-blue-to-red;
+  border-radius: 50%;
+  z-index: 2;
+
+  @include hover-focus {
+    background: $color-default-white;
+    color: $color-sapphire;
+    opacity: 1;
+    outline: 2px solid $color-sapphire;
+    outline-offset: 7px;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &:disabled {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+    opacity: 0.4;
+  }
+}
