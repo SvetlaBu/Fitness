@@ -15,7 +15,7 @@
 
 .social__link {
   display: block;
-  padding: 13px;
+  padding: 12px;
   background-color: $color-default-white;
   color: #030a1a;
   border-radius: 50%;
@@ -24,6 +24,7 @@
 
   @include hover-focus {
     background-color: #103aae;
+    border-radius: 50%;
     color: $color-default-white;
   }
 
