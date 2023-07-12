@@ -107,6 +107,34 @@ h1, h2, h3, p {
   padding: 0;
 }
 
+h1, h2, h3 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: normal;
+  color: #102654;
+}
+
+h1 {
+  font-size: 92px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
 /**
 * 1. Correct the inheritance and scaling of font size in all browsers.
 * 2. Correct the odd `em` font sizing in all browsers.

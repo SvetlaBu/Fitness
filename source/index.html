@@ -42,6 +42,7 @@
             <a class="btn btn--hero" href="#">Купить абонемент</a>
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="img/superman-desktop.webp, img/superman-desktop@2.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/superman-desktop.jpg, img/superman-desktop@2.jpg 2x">
               <source media="(min-width: 768px)" type="image/webp" srcset="img/superman-tablet.webp, img/superman-tablet@2.webp 2x">
               <source media="(min-width: 768px)" srcset="img/superman-tablet.jpg, img/superman-tablet@2.jpg 2x">
               <img width="500" height="556" src="img/superman-desktop.jpg" srcset="img/superman-desktop@2.jpg" alt="Фото атлетичного человека в обтягивающем костюме супермена.">
@@ -71,6 +72,7 @@
                 </button>
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/info-video-desktop.webp, img/info-video-desktop@2.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/info-video-desktop.jpg, img/info-video-desktop@2.jpg 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/info-video-tablet.webp, img/info-video-tablet@2.webp 2x">
                   <source type="image/webp" srcset="img/info-video-mobile.webp, img/info-video-mobile@2.webp 2x">
                   <img class="info__preview" width="320" height="167" src="img/info-video-mobile.jpg" srcset="img/info-video-mobile@2.jpg" alt="Внутри тренажерного зала.">
@@ -80,7 +82,7 @@
           </div>
         </section>
         <section class="offers" id="offers">
-          <div class="offers__container container">
+          <div class="container">
             <h2 class="offers__title">Абонементы</h2>
             <div class="offers__buttons">
               <button class="offers__button offers__button-1 offers__button--active" id="offers-button-1">1 месяц</button>
@@ -203,9 +205,41 @@
             </ul>
           </div>
           <picture>
-            <source type="image/webp" srcset="img/dumbbells-tablet.webp, img/dumbbells-tablet@2.webp 2x">
-            <img class="offers__img" width="347" height="444" src="img/dumbbells-tablet.png" srcset="img/dumbbells-tablet@2.png" alt="Изображение блинов">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/heavy--desktop.webp, img/heavy-desktop@2.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/heavy-desktop.jpg, img/heavy-desktop@2.jpg 2x">
+            <source type="image/webp" srcset="img/heavy-tablet.webp, img/heavy-tablet@2.webp 2x">
+            <img class="offers__img" width="347" height="444" src="img/heavy-tablet.png" srcset="img/heavy-tablet@2.png" alt="Красные блины для штанги.">
           </picture>
+        </section>
+        <section class="promo">
+          <div class="promo__container">
+            <div class="promo__info">
+              <h2 class="promo__title">SUPER GAMES</h2>
+              <div class="promo__date">
+                <span>Дата</span>
+                <div class="promo__number">
+                  <b>7</b>
+                  <div class="promo__month">
+                    <span>Марта</span>
+                    <span>2019</span>
+                  </div>
+                </div>
+                <span>Время</span>
+                <b>12:00</b>
+              </div>
+              <p>Ежегодные соревнования по CrossFit</p>
+              <a class="promo__link" href="#">Заполнить заявку</a>
+            </div>
+            <div class="promo__pic">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/games-desktop.webp, img/games-desktop@2.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/games-desktop.jpg, img/games-desktop@2.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/games-tablet.webp, img/games-tablet@2.webp 2x">
+                  <source type="image/webp" srcset="img/games-mobile.webp, img/games-mobile@2.webp 2x">
+                  <img class="info__preview" width="290" height="292" src="img/games-mobile.jpg" srcset="img/games-mobile@2.jpg" alt="Фото мускулистого мужчины.">
+              </picture>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="main-footer">

@@ -49,16 +49,11 @@
 .info__title {
   display: block;
   margin-bottom: 5px;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.03em;
 
   @include vp-1199 {
     font-size: 40px;
     line-height: 56px;
+    text-transform: none;
     margin-bottom: 0;
     text-align: start;
     margin-left: 112px;

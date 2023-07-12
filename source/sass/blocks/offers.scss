@@ -6,7 +6,8 @@
   background-color: $color-ghost-white;
 }
 
-.offers__container {
+.offers .container {
+  padding-top: 136px;
   display: flex;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -16,6 +17,7 @@
 
   @include vp-1199 {
     max-width: 1119px;
+    padding: 96px 163px 0;
     padding-left: 163px;
     padding-right: 163px;
   }
@@ -53,7 +55,9 @@
   font-weight: 600;
   font-size: 54px;
   line-height: 65px;
+  text-transform: none;
   font-family: "Alumni Sans", "Arial", sans-serif;
+  color: $color-sapphire;
   letter-spacing: 0.03em;
   max-width: 350px;
   padding-right: 4px;
