@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {changeOffers} from './modules/effects/offers';
 import {sliderCoachers} from './vendor/carousel';
+import {initAccordions} from './modules/effects/init-accordion';
 
 // ---------------------------------
 
@@ -15,7 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   changeOffers();
-  // sliderCoachers();
+  sliderCoachers();
+  initAccordions();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
