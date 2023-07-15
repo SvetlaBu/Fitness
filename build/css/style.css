@@ -3576,6 +3576,15 @@ button,
 .accordion__parent {
   position: relative;
 }
+@media (max-width: 1199px) {
+  .accordion__parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .accordion__element:last-child {
   margin-bottom: 0;
 }
@@ -3589,11 +3598,35 @@ button,
           justify-content: start;
   margin-bottom: 34px;
 }
+@media (max-width: 1199px) {
+  .accordion__element {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .accordion__element {
+    margin-bottom: 10px;
+  }
+}
 .accordion__element.is-active .accordion {
   position: absolute;
   top: 0;
   width: calc(100% - 260px);
   background-color: #f8f9fc;
+}
+@media (max-width: 1199px) {
+  .accordion__element.is-active .accordion {
+    top: 120px;
+    left: 0;
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .accordion__element.is-active .accordion {
+    top: 250px;
+    left: 0;
+    width: 80%;
+  }
 }
 .accordion__element.is-active > .accordion__button {
   background: -webkit-gradient(linear, left top, right top, from(#b80027), to(#003d85));
@@ -3610,6 +3643,13 @@ button,
   text-transform: uppercase;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  .accordion__button {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
 .accordion__wrapper {
   padding: 10px;
   font-size: 18px;
@@ -3620,6 +3660,27 @@ button,
 .accordion .btn {
   background-color: rgba(255, 255, 255, 0);
   color: #102654;
+}
+
+@media (max-width: 1199px) {
+  .accordion__element {
+    -ms-grid-columns: 170px;
+    grid-template-columns: 170px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .accordion__theme.is-active > .accordion__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 80%;
+            flex: 1 1 80%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .accordion__list {
@@ -3645,10 +3706,19 @@ button,
   padding: 25px 25px 22px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
+@media (max-width: 1199px) {
+  .accordion__list {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    width: 160px;
+    margin: 0;
+  }
+}
 @media (max-width: 767px) {
   .accordion__list {
     width: 83.7%;
-    margin-top: 30px;
   }
 }
 .accordion__list:hover, .accordion__list:focus {
@@ -3676,9 +3746,14 @@ button,
   border-top: 1px solid rgba(28, 51, 116, 0.2);
   margin-left: 40px;
 }
+@media (max-width: 1199px) {
+  .accordion__item {
+    margin-left: 0;
+  }
+}
 .accordion__item > .accordion__content {
-  position: relative;
   left: 0;
+  width: 100%;
 }
 .accordion__item > .accordion__button {
   text-transform: none;
@@ -3733,6 +3808,19 @@ button,
   height: -moz-max-content;
   height: max-content;
   padding: 103px 120px;
+}
+@media (max-width: 1199px) {
+  .questions {
+    padding: 100px 45px;
+    min-height: 850px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .questions {
+    padding: 70px 15px;
+    min-height: 815px;
+  }
 }
 .questions__title {
   margin-bottom: 39px;

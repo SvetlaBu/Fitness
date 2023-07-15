@@ -9,6 +9,11 @@
 
   &__parent {
     position: relative;
+
+    @include vp-1199 {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__element:last-child {
@@ -20,6 +25,14 @@
     grid-template-columns: 260px calc(100% - 260px);
     justify-content: start;
     margin-bottom: 34px;
+
+    @include vp-1199 {
+      margin-bottom: 10px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 10px;
+    }
   }
 
 
@@ -28,6 +41,18 @@
     top: 0;
     width: calc(100% - 260px);
     background-color: $color-ghost-white;
+
+    @include vp-1199 {
+      top: 120px;
+      left: 0;
+      width: 80%;
+    }
+
+    @include vp-767 {
+      top: 250px;
+      left: 0;
+      width: 80%;
+    }
   }
 
   &__element.is-active > &__button {
@@ -39,10 +64,12 @@
     padding: 10px;
     flex: 0 0 260px;
     align-self: flex-start;
-
     text-transform: uppercase;
-
     cursor: pointer;
+
+    @include vp-1199 {
+      grid-row: 1/2;
+    }
   }
 
   &__wrapper {
@@ -56,6 +83,20 @@
   & .btn {
     background-color:  $color-transparent;
     color: $color-sapphire;
+  }
+}
+
+.accordion__element {
+  @include vp-1199 {
+    grid-template-columns: 170px;
+    justify-content: center;
+  }
+}
+
+.accordion__theme.is-active > .accordion__content {
+  @include vp-1199 {
+    flex: 1 1 80%;
+    justify-content: flex-start;
   }
 }
 
@@ -76,9 +117,15 @@
   padding: 25px 25px 22px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.20);
 
+  @include vp-1199 {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    width: 160px;
+    margin: 0;
+  }
+
   @include vp-767 {
     width: 83.7%;
-    margin-top: 30px;
   }
 
   &:hover,
@@ -107,9 +154,13 @@
   border-top: 1px solid rgba(28, 51, 116, 0.20);
   margin-left: 40px;
 
+  @include vp-1199 {
+    margin-left: 0;
+  }
+
   & > .accordion__content {
-    position: relative;
     left: 0;
+    width: 100%;
   }
 
   & > .accordion__button {
