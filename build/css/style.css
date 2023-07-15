@@ -3573,6 +3573,9 @@ button,
   width: 90%;
   margin: 0 auto;
 }
+.accordion__parent {
+  position: relative;
+}
 .accordion__element:last-child {
   margin-bottom: 0;
 }
@@ -3581,8 +3584,16 @@ button,
   display: grid;
   -ms-grid-columns: 260px calc(100% - 260px);
   grid-template-columns: 260px calc(100% - 260px);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-bottom: 34px;
-  position: relative;
+}
+.accordion__element.is-active .accordion {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 260px);
+  background-color: #f8f9fc;
 }
 .accordion__element.is-active > .accordion__button {
   background: -webkit-gradient(linear, left top, right top, from(#b80027), to(#003d85));
@@ -3591,6 +3602,9 @@ button,
 }
 .accordion__button {
   padding: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-transform: uppercase;

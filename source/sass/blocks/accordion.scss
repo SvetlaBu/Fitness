@@ -7,6 +7,10 @@
     margin: 0 auto;
   }
 
+  &__parent {
+    position: relative;
+  }
+
   &__element:last-child {
     margin-bottom: 0;
   }
@@ -14,8 +18,15 @@
   &__element {
     display: grid;
     grid-template-columns: 260px calc(100% - 260px);
+    justify-content: start;
     margin-bottom: 34px;
-    position: relative;
+  }
+
+  &__element.is-active & {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 260px);
+    background-color: $color-ghost-white;
   }
 
   &__element.is-active > &__button {
@@ -25,6 +36,7 @@
 
   &__button {
     padding: 10px;
+    flex: 0 0 260px;
     align-self: flex-start;
 
     text-transform: uppercase;
