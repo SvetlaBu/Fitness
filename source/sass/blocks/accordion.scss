@@ -22,6 +22,7 @@
     margin-bottom: 34px;
   }
 
+
   &__element.is-active & {
     position: absolute;
     top: 0;
@@ -75,10 +76,6 @@
   padding: 25px 25px 22px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.20);
 
-  @include vp-1199 {
-    width: 56%;
-  }
-
   @include vp-767 {
     width: 83.7%;
     margin-top: 30px;
@@ -106,12 +103,9 @@
 }
 
 .accordion__item {
-  width: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr max-content;
-  position: relative;
-  padding: 32px 0 25px;
   border-top: 1px solid rgba(28, 51, 116, 0.20);
+  margin-left: 40px;
 
   & > .accordion__content {
     position: relative;
@@ -129,7 +123,7 @@
   & > .accordion__button::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 26px;
     right: 26px;
     width: 20px;
     height: 1.5px;

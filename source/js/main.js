@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   changeOffers();
-  sliderCoachers();
+  // sliderCoachers();
   initAccordions();
   // ---------------------------------
 

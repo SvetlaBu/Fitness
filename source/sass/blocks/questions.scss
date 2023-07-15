@@ -3,4 +3,10 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   min-width: 320px;
   width: 100%;
+  height: max-content;
+  padding: 103px 120px;
+
+  &__title {
+    margin-bottom: 39px;
+  }
 }
