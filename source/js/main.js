@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {changeOffers} from './modules/effects/offers';
 import {sliderCoachers} from './vendor/carousel';
 import {initAccordions} from './modules/effects/init-accordion';
+import {findVideos} from './modules/effects/video'
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   changeOffers();
   // sliderCoachers();
   initAccordions();
+  findVideos();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

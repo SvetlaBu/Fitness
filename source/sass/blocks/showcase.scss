@@ -1,0 +1,247 @@
+.showcase {
+  overflow: hidden;
+  min-width: 320px;
+  width: 100%;
+}
+
+.showcase .container {
+  padding-top: 169px;
+  padding-bottom: 117px;
+
+  @include vp-1199 {
+    padding-top: 95px;
+    padding-bottom: 92px;
+    max-width: 1119px;
+  }
+
+  @include vp-767 {
+    max-width: 767px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
+
+.showcase__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 34px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+    padding-right: 10px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+    padding-right: 6px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.showcase__group {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px;
+
+  @include vp-1199 {
+    grid-gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.showcase__action {
+  position: relative;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $color-sapphire;
+  border: 7px solid;
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+  border-image-slice: 26;
+  padding: 28px;
+  width: 100%;
+  min-height: 211px;
+  height: fit-content;
+
+  @include vp-1199 {
+    padding-right: 38px;
+  }
+
+  @include vp-767 {
+    padding: 38px 40px;
+  }
+}
+
+.showcase__action--accent {
+  min-height: 462px;
+  padding: 0;
+  border: none;
+  grid-row: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-column: span 2;
+    grid-template-columns: 41.1% 58.9%;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    min-height: 598px;
+    grid-column: span 1;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.showcase__pic {
+  width: 100%;
+  height: 100%;
+}
+
+.showcase__img {
+  background-color: $color-neon-blue;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase__action span {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 20px;
+
+  @include vp-767 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.showcase__action p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 7px 0 30px;
+
+  @include vp-767 {
+    margin: 13px 0 30px;
+    text-align: center;
+  }
+}
+
+.showcase__text {
+  position: relative;
+  background-color: $color-torch-red;
+  padding: 33px 45px 45px;
+  color: $color-default-white;
+}
+
+.showcase__text span {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.showcase__text b {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 56px;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.showcase__text p {
+  display: block;
+  width: 100%;
+  margin: 28px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  @include vp-767 {
+    margin: 24px 0;
+  }
+}
+
+.showcase__action .showcase__link {
+  transition: 0.3s;
+  position: absolute;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-resolution-blue;
+  border-bottom: 1px solid $color-resolution-blue;
+  bottom: 28px;
+
+  &:focus {
+    border: none;
+    outline: 1px solid $color-resolution-blue;
+    outline-offset: 10px;
+  }
+
+  &:active {
+    border-bottom: 1px solid $color-resolution-blue;
+  }
+
+  @include vp-767 {
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+}
+
+.showcase__action--accent .showcase__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  border-bottom: 1px solid $color-default-white;
+  bottom: 45px;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    border: none;
+    outline: 1px solid $color-default-white;
+    outline-offset: 10px;
+  }
+
+  &:active {
+    border-bottom: 1px solid $color-default-white;
+  }
+}
+
+.showcase__link:disabled {
+  opacity: 0.3;
+}

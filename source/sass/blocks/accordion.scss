@@ -13,6 +13,7 @@
     @include vp-1199 {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -23,18 +24,22 @@
   &__element {
     display: grid;
     grid-template-columns: 260px calc(100% - 260px);
+    column-gap: 40px;
     justify-content: start;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
 
     @include vp-1199 {
+      grid-template-columns: 168px;
+      column-gap: 0;
+      justify-content: center;
       margin-bottom: 10px;
     }
 
-    @include vp-767 {
-      margin-bottom: 10px;
+    @include vp-1199 {
+      grid-template-columns: 138px;
+      justify-content: center;
     }
   }
-
 
   &__element.is-active & {
     position: absolute;
@@ -62,7 +67,7 @@
 
   &__button {
     padding: 10px;
-    flex: 0 0 260px;
+    // flex: 0 0 260px;
     align-self: flex-start;
     text-transform: uppercase;
     cursor: pointer;
@@ -86,28 +91,28 @@
   }
 }
 
-.accordion__element {
-  @include vp-1199 {
-    grid-template-columns: 170px;
-    justify-content: center;
-  }
+.accordion__theme > .accordion__content {
+  visibility: hidden;
+  height: 0;
 }
 
 .accordion__theme.is-active > .accordion__content {
+  visibility: visible;
+  height: max-content;
+
   @include vp-1199 {
     flex: 1 1 80%;
     justify-content: flex-start;
   }
 }
 
-.accordion__list {
+.accordion__toggle {
   user-select: none;
   justify-content: center;
   transition: $trans-default;
   background-color: $color-default-white;
   color: $color-sapphire;
   outline: 1px solid rgba(16, 38, 84, 0.2);
-  width: 260px;
   min-height: 64px;
   font-weight: 500;
   font-size: 18px;
@@ -168,23 +173,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.2;
-  }
-
-  & > .accordion__button::before,
-  & > .accordion__button::after {
-    content: "";
-    position: absolute;
-    top: 26px;
-    right: 26px;
-    width: 20px;
-    height: 1.5px;
-    background-color: $color-sapphire;
-    box-shadow: none;
-    z-index: 3;
-  }
-
-  & > .accordion__button::after {
-    transform: rotate(90deg);
+    position: relative;
   }
 
   &.is-active > .accordion__button {
@@ -193,24 +182,34 @@
   }
 }
 
-// .is-active + .accordion__item::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 12px;
-//   padding: 22px;
-//   border-radius: 50%;
-//   border: 1px solid $color-transparent;
-//   z-index: 2;
-// }
+.accordion__item.is-active > .accordion__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 26px;
+  padding: 20px;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  outline: 1px solid $color-sapphire;
+  z-index: 3;
+}
 
-// .accordion__item::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 12px;
-//   padding: 22px;
-//   border-radius: 50%;
-//   border: 1px solid $color-sapphire;
-//   z-index: 2;
-// }
+.accordion__button:not(.accordion__toggle):before,
+.accordion__button:not(.accordion__toggle):after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  width: 20px;
+  height: 1.5px;
+  background-color: $color-sapphire;
+  z-index: 3;
+}
+
+.accordion__button:not(.accordion__toggle):after {
+  transform: rotate(90deg);
+}
+
+.accordion__item.is-active > .accordion__button:not(.accordion__toggle):after {
+  transform: none;
+}

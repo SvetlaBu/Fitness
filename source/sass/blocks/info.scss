@@ -201,3 +201,11 @@
 .info__link .btn--info {
   position: absolute;
 }
+
+.info__video--active::after {
+  display: none;
+}
+
+.info__video--enabled .btn--info {
+  display: flex;
+}
