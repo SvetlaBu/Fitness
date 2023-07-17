@@ -4,7 +4,7 @@
   min-width: 320px;
   width: 100%;
   overflow-x: hidden;
-  height: max-content;
+  min-height: max-content;
   padding: 103px 120px;
 
   @include vp-1199 {

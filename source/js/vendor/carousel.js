@@ -1,10 +1,24 @@
 import './swiper.js';
-
+const carouselList = document.getElementById('carousel');
 const sliderlList = document.getElementById('slider');
+
+const carouselReview = () => {
+  if (carouselList) {
+    const swiper = new Swiper(carouselList, {
+      navigation: {
+        nextEl: '.review__button--right',
+        prevEl: '.review__button--left',
+      },
+      spaceBetween: 560,
+      slidesPerView: 1,
+      speed: 600,
+      autoHeight: true,
+    });
+  }
+};
 
 const sliderCoachers = () => {
   if (sliderlList) {
-    // eslint-disable-next-line no-unused-vars, no-undef
     const swiper = new Swiper(sliderlList, {
       navigation: {
         nextEl: '.coaches__button--right',
@@ -30,4 +44,4 @@ const sliderCoachers = () => {
   }
 };
 
-export {sliderCoachers};
+export {carouselReview, sliderCoachers};

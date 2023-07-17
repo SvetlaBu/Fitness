@@ -39,7 +39,7 @@
                 <a href="#">Кардио-зона</a>
               </li>
             </ul>
-            <a class="btn btn--hero" href="#">Купить абонемент</a>
+            <a class="btn btn--hero" href="#offers">Купить абонемент</a>
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="img/superman-desktop.webp, img/superman-desktop@2.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/superman-desktop.jpg, img/superman-desktop@2.jpg 2x">
@@ -65,11 +65,11 @@
             </picture>
             <div class="info__video" id="video">
               <a class="info__link" href="https://www.youtube.com/embed/9TZXsZItgdw" target="_blank" id="video-on">
-                <button class="btn btn--info" type="button" id="video-button" aria-label="Кнопка включения видео.">
+                <span class="btn btn--info" id="video-button" role="status" aria-label="Кнопка включения видео.">
                   <svg width="13" height="13">
                     <use xlink:href="img/sprite/sprite.svg#play"></use>
                   </svg>
-                </button>
+                </span>
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/info-video-desktop.webp, img/info-video-desktop@2.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/info-video-desktop.jpg, img/info-video-desktop@2.jpg 2x">
@@ -244,7 +244,7 @@
           </div>
         </section>
         <section class="coaches">
-          <div class="coaches__container container">
+          <div class="coaches__container">
             <h2 class="coaches__title">Тренеры</h2>
             <div class="coaches__inner">
               <div class="coaches__buttons">
@@ -261,7 +261,7 @@
               </div>
               <div class="coaches__slider swiper" id="slider">
                 <ul class="coaches__list swiper-wrapper">
-                  <li class="coaches__item swiper-slide" id="swiper-slide" tabindex="0">
+                  <li class="coaches__item swiper-slide" tabindex="0">
                     <div class="coaches__pic">
                       <picture>
                         <source type="image/webp" srcset="img/coach-1-desktop.webp, img/coach-1-desktop@2.webp 2x">
@@ -284,7 +284,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="coaches__item swiper-slide" id="swiper-slide" tabindex="0">
+                  <li class="coaches__item swiper-slide" tabindex="0">
                     <div class="coaches__pic">
                       <picture>
                         <source type="image/webp" srcset="img/coach-2-desktop.webp, img/coach-2-desktop@2.webp 2x">
@@ -307,7 +307,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="coaches__item swiper-slide" id="swiper-slide" tabindex="0">
+                  <li class="coaches__item swiper-slide" tabindex="0">
                     <div class="coaches__pic">
                       <picture>
                         <source type="image/webp" srcset="img/coach-3-desktop.webp, img/coach-3-desktop@2.webp 2x">
@@ -330,7 +330,7 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="coaches__item swiper-slide" id="swiper-slide" tabindex="0">
+                  <li class="coaches__item swiper-slide" tabindex="0">
                     <div class="coaches__pic">
                       <picture>
                         <source type="image/webp" srcset="img/coach-4-desktop.webp, img/coach-4-desktop@2.webp 2x">
@@ -548,7 +548,7 @@
             <div class="accordion__element accordion__theme" data-accordion="element">
               <button class="accordion__button btn accordion__toggle" type="button" data-accordion="button">Центр</button>
               <div class="accordion__content" data-accordion="content">
-                <div class="accordion" data-accordion="parent" data-single="data-single">
+                <div class="accordion" data-accordion="parent">
                   <div class="accordion__element is-active accordion__item" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Как стать членом фитнес-центра?</button>
                     <div class="accordion__content" data-accordion="content">
@@ -587,7 +587,7 @@
             <div class="accordion__element accordion__theme" data-accordion="element">
               <button class="accordion__button btn accordion__toggle" type="button" data-accordion="button">Абонемент</button>
               <div class="accordion__content" data-accordion="content">
-                <div class="accordion" data-accordion="parent" data-single="data-single">
+                <div class="accordion" data-accordion="parent">
                   <div class="accordion__element is-active accordion__item" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Занятия с тренером входят в абонемент?</button>
                     <div class="accordion__content" data-accordion="content">
@@ -626,7 +626,7 @@
             <div class="accordion__element accordion__theme" data-accordion="element">
               <button class="accordion__button btn accordion__toggle" type="button" data-accordion="button">Услуги</button>
               <div class="accordion__content" data-accordion="content">
-                <div class="accordion" data-accordion="parent" data-single="data-single">
+                <div class="accordion" data-accordion="parent">
                   <div class="accordion__element is-active accordion__item" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Предлагает ли клуб услуги
                       по консультированию
@@ -667,7 +667,7 @@
             <div class="accordion__element accordion__theme" data-accordion="element">
               <button class="accordion__button btn accordion__toggle" type="button" data-accordion="button">Правила</button>
               <div class="accordion__content" data-accordion="content">
-                <div class="accordion" data-accordion="parent" data-single="data-single">
+                <div class="accordion" data-accordion="parent">
                   <div class="accordion__element is-active accordion__item" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Открыть</button>
                     <div class="accordion__content" data-accordion="content">
@@ -700,6 +700,61 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="review">
+          <div class="container">
+            <h2 class="review__title">
+              Отзывы
+            </h2>
+            <div class="review__wrapper">
+              <div class="review__buttons">
+                <button class="review__button review__button--left">
+                  <svg width="16" height="32">
+                    <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="review__button review__button--right">
+                  <svg width="17" height="33">
+                    <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="review__slider swiper" id="carousel">
+                <div class="review__group swiper-wrapper">
+                  <blockquote class="review__item swiper-slide" tabindex="0">
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/user.webp, img/user@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/user.jpg" srcset="img/user@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
+                    <h3>Анна Орлова</h3>
+                    <p>Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей</p>
+                  </blockquote>
+                  <blockquote class="review__item swiper-slide" tabindex="0">
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/user.webp, img/user@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/user.jpg" srcset="img/user@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
+                    <h3>Анна Орлова</h3>
+                    <p>Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей</p>
+                  </blockquote>
+                  <blockquote class="review__item swiper-slide" tabindex="0">
+                    <div class="review__pic">
+                      <picture>
+                        <source type="image/webp" srcset="img/user.webp, img/user@2.webp 2x">
+                        <img class="review__img" width="68" height="68" src="img/user.jpg" srcset="img/user@2.jpg" alt="Аватар отзыва">
+                      </picture>
+                    </div>
+                    <h3>Анна Орлова</h3>
+                    <p>Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей</p>
+                  </blockquote>
                 </div>
               </div>
             </div>
@@ -758,36 +813,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

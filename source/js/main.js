@@ -2,9 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {changeOffers} from './modules/effects/offers';
-import {sliderCoachers} from './vendor/carousel';
+import {carouselReview, sliderCoachers} from './vendor/carousel';
+
 import {initAccordions} from './modules/effects/init-accordion';
-import {findVideos} from './modules/effects/video'
+import {findVideos} from './modules/effects/video';
 
 // ---------------------------------
 
@@ -20,6 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // sliderCoachers();
   initAccordions();
   findVideos();
+  sliderCoachers();
+  carouselReview();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

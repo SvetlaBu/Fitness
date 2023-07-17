@@ -45,6 +45,8 @@
     position: absolute;
     top: 0;
     width: calc(100% - 260px);
+    height: max-content;
+    padding-bottom: 30px;
     background-color: $color-ghost-white;
 
     @include vp-1199 {
@@ -91,6 +93,10 @@
   }
 }
 
+.accordion__content > .accordion {
+  min-height: max-content;
+}
+
 .accordion__theme > .accordion__content {
   visibility: hidden;
   height: 0;
@@ -98,7 +104,7 @@
 
 .accordion__theme.is-active > .accordion__content {
   visibility: visible;
-  height: max-content;
+  min-height: max-content;
 
   @include vp-1199 {
     flex: 1 1 80%;
