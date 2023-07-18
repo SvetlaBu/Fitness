@@ -30,13 +30,13 @@
   }
 }
 
-.offers__img {
+.offers__back {
   display: block;
   position: absolute;
   z-index: 1;
-  bottom: -150px;
-  right: -100px;
-  width: 387px;
+  bottom: -220px;
+  right: 0;
+  width: 287px;
 
   @include vp-1199 {
     bottom: -125px;

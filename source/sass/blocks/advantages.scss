@@ -9,7 +9,7 @@
 .advantages__container {
   position: relative;
   z-index: 2;
-  padding-top: 156px;
+  padding-top: 122px;
   padding-bottom: 7px;
 
   @include vp-1199 {
@@ -258,7 +258,8 @@
   margin: 0;
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1;
+  margin-bottom: 10px;
 
   @include vp-1199 {
     font-size: 20px;
@@ -272,7 +273,6 @@
 }
 
 .advantages__description p {
-  margin: 10px 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;

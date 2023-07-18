@@ -15,10 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
-  // Modules
   changeOffers();
-  // sliderCoachers();
   initAccordions();
   findVideos();
   sliderCoachers();
@@ -32,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    window.form.validateForm(form)();
   });
 });
 

@@ -1,5 +1,4 @@
 .accordion {
-  //max-width: 500px;
   margin: 0 auto 50px auto;
 
   & & {
@@ -24,7 +23,7 @@
   &__element {
     display: grid;
     grid-template-columns: 260px calc(100% - 260px);
-    column-gap: 40px;
+    column-gap: 30px;
     justify-content: start;
     margin-bottom: 10px;
 
@@ -39,13 +38,17 @@
       grid-template-columns: 138px;
       justify-content: center;
     }
+
+    & .accordion__item {
+      margin: 0;
+      padding: 20px 0;
+    }
   }
 
   &__element.is-active & {
     position: absolute;
     top: 0;
     width: calc(100% - 260px);
-    height: max-content;
     padding-bottom: 30px;
     background-color: $color-ghost-white;
 
@@ -69,7 +72,6 @@
 
   &__button {
     padding: 10px;
-    // flex: 0 0 260px;
     align-self: flex-start;
     text-transform: uppercase;
     cursor: pointer;
@@ -88,13 +90,9 @@
   }
 
   & .btn {
-    background-color:  $color-transparent;
+    background-color: $color-transparent;
     color: $color-sapphire;
   }
-}
-
-.accordion__content > .accordion {
-  min-height: max-content;
 }
 
 .accordion__theme > .accordion__content {
@@ -104,10 +102,9 @@
 
 .accordion__theme.is-active > .accordion__content {
   visibility: visible;
-  min-height: max-content;
+  flex: 1 1 80%;
 
   @include vp-1199 {
-    flex: 1 1 80%;
     justify-content: flex-start;
   }
 }
@@ -119,14 +116,14 @@
   background-color: $color-default-white;
   color: $color-sapphire;
   outline: 1px solid rgba(16, 38, 84, 0.2);
-  min-height: 64px;
+  min-height: 54px;
   font-weight: 500;
   font-size: 18px;
   line-height: 14px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  align-items: center;
   text-transform: none;
-  padding: 25px 25px 22px;
-  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
   @include vp-1199 {
     grid-row: 1/2;
@@ -162,8 +159,7 @@
 
 .accordion__item {
   grid-template-columns: 100%;
-  border-top: 1px solid rgba(28, 51, 116, 0.20);
-  margin-left: 40px;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
 
   @include vp-1199 {
     margin-left: 0;
@@ -178,7 +174,7 @@
     text-transform: none;
     font-size: 24px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.1;
     position: relative;
   }
 

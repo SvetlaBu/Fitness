@@ -1,7 +1,10 @@
 .custom-input,
 .custom-textarea {
   position: relative;
+
   display: flex;
+  width: 530px;
+  padding: 14px 0 28px;
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 48px;
@@ -25,6 +28,9 @@
       min-height: 48px;
       margin-left: auto;
       padding: 10px;
+
+      border: 2px solid rgba(#000000, 0.2);
+      border-radius: 5px;
       outline: none;
 
       transition: border 0.3s ease;
@@ -69,39 +75,36 @@
   &.is-invalid {
     input,
     textarea {
-      border-bottom: 2px solid #ff1553;
+      border: 2px solid #ff1553;
 
       &:focus,
       &:hover {
-        border-bottom: 2px solid rgba(#ff1553, 0.5);
+        border: 2px solid rgba(#ff1553, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border-bottom: 2px solid $color-default-white;
+      border: 2px solid #22b259;
 
       &:focus,
       &:hover {
-        border-bottom: 2px solid rgba($color-default-white, 0.5);
+        border: 2px solid rgba(#22b259, 0.5);
       }
     }
   }
-
   .input-message {
     position: absolute;
-    width: max-content;
-    font-size: 14px;
-    left: 0;
-    bottom: -25px;
+    right: 0;
+    bottom: -5px;
 
     &.is-invalid {
       color: #ff0000;
     }
 
     &.is-valid {
-      color: $color-default-white;
+      color: #15ab07;
     }
   }
 }

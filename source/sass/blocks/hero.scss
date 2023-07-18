@@ -1,34 +1,37 @@
 .hero {
   box-sizing: border-box;
-  padding: 52px 8%;
   background: $conic-blue-to-red;
 
   @include vp-1199 {
-    padding: 80px 44px 80px 36px;
     min-height: 554px;
   }
 
   @include vp-767 {
-    padding: 30px 15px 76px 6px;
     min-height: 400px;
   }
 }
 
 .hero__wrapper {
-  width: 70%;
+  width: 83.5%;
+  max-width: 1366px;
+  overflow: hidden;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: $color-default-white;
   display: grid;
   grid-template-columns: 1fr 2fr 564px;
+  padding: 52px 8%;
+  box-sizing: border-box;
 
   @include vp-1199 {
     width: 100%;
+    padding: 80px 44px 80px 36px;
     grid-template-columns: 1fr 2fr 324px;
   }
 
   @include vp-767 {
+    padding: 30px 15px 76px 6px;
     grid-template-columns: 70px calc(100% - 70px);
   }
 }
@@ -41,6 +44,7 @@
 }
 
 .hero h1 {
+  position: relative;
   margin-top: 180px;
   margin-left: 10px;
   font-weight: 700;
@@ -61,11 +65,11 @@
   }
 }
 
-.hero b {
+.hero__wrapper span {
+  position: absolute;
   font-size: 42px;
-  letter-spacing: 0.02em;
-  grid-row: 1/2;
-  align-self: end;
+  top: -66px;
+  left: 120px;
 }
 
 .hero .hero__list {
@@ -108,7 +112,8 @@
 }
 
 .hero picture img {
-  height: 100%;
+  width: 100%;
+  object-fit: cover;
 
   @include vp-767 {
     display: none;

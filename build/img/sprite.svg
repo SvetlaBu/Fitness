@@ -31,7 +31,7 @@
 <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="currentColor"/>
 </symbol>
 <symbol id="arrow" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 33L0.999999 17L17 0.999998" stroke="#AFAFAF"/>
+<path d="M17 33L0.999999 17L17 0.999998" stroke="currentColor"/>
 </symbol>
 <symbol id="rouble" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>

@@ -27,7 +27,7 @@
       <main class="main-page">
         <div class="hero">
           <section class="hero__wrapper">
-            <h1 class="hero__title">Фитнес центр</h1>
+            <h1 class="hero__title"><span>Омск</span>Фитнес центр</h1>
             <ul class="hero__list">
               <li class="hero__item">
                 <a href="#">Тренажёрный зал</a>
@@ -209,7 +209,7 @@
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/heavy--desktop.webp, img/heavy-desktop@2.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/heavy-desktop.jpg, img/heavy-desktop@2.jpg 2x">
             <source type="image/webp" srcset="img/heavy-tablet.webp, img/heavy-tablet@2.webp 2x">
-            <img class="offers__img" width="347" height="444" src="img/heavy-tablet.png" srcset="img/heavy-tablet@2.png" alt="Красные блины для штанги.">
+            <img class="offers__back" width="347" height="444" src="img/heavy-tablet.png" srcset="img/heavy-tablet@2.png" alt="Красные блины для штанги.">
           </picture>
         </section>
         <section class="promo">
@@ -543,8 +543,9 @@
           </div>
         </section>
         <section class="questions" data-tabs="element">
-          <h2 class="questions__title">Вопросы и ответы</h2>
-          <div class="accordion accordion__parent" data-accordion="parent" data-single="data-single" data-close-inner="data-close-inner">
+          <div class="container">
+            <h2 class="questions__title">Вопросы и ответы</h2>
+            <div class="accordion accordion__parent" data-accordion="parent" data-single="data-single" data-close-inner="data-close-inner">
             <div class="accordion__element accordion__theme" data-accordion="element">
               <button class="accordion__button btn accordion__toggle" type="button" data-accordion="button">Центр</button>
               <div class="accordion__content" data-accordion="content">
@@ -703,6 +704,7 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </section>
         <section class="review">
@@ -760,6 +762,49 @@
             </div>
           </div>
         </section>
+        <div class="contacts">
+          <section class="contacts__user">
+            <div class="container" data-form-validate>
+              <h2>Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="custom-input"  data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
+                  <label for="name" aria-label="Поле ввода имени.">
+                    <input type="text" id="name" placeholder="Имя" name="name" required>
+                  </label>
+                </div>
+                <div class="custom-input"  data-required data-validate-type="phone" data-on-input-validate, data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно">
+                  <label for="tel" aria-label="Поле ввода телефона.">
+                    <input type="tel" id="tel" placeholder="Телефон" name="number" required>
+                  </label>
+                </div>
+                <button class="contacts__submit" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts__company">
+            <div class="container">
+              <h2>Контакты</h2>
+              <address class="contacts__info">
+                <div>
+                  <b>Адрес:</b>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div>
+                  <b>Телефон:</b>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
+                </div>
+                <div>
+                  <b>График работы:</b>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </div>
+                <div>
+                  <b>Email:</b>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </div>
+              </address>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="main-footer">
         <div class="container">
