@@ -222,17 +222,17 @@
   @include vp-767 {
     min-height: 292px;
   }
-}
 
-.promo__img {
-  position: absolute;
-  display: flex;
-  background-color: $color-egyptian-blue;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  & img {
+    position: absolute;
+    display: flex;
+    background-color: $color-egyptian-blue;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 
-  @include vp-1199 {
-    position: relative;
+    @include vp-1199 {
+      position: relative;
+    }
   }
 }

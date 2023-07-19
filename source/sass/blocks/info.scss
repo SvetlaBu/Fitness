@@ -56,7 +56,7 @@
     text-transform: none;
     margin-bottom: 0;
     text-align: start;
-    margin-left: 112px;
+    margin-left: 122px;
     letter-spacing: 0.05em;
   }
 
@@ -128,6 +128,11 @@
     margin: 0;
     margin-top: 340px;
   }
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .info__video::before {
@@ -167,11 +172,6 @@
   position: absolute;
   background-color: rgba(20, 54, 122, 0.5);
   top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.info__preview {
   width: 100%;
   height: 100%;
 }

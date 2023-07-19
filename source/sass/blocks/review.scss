@@ -4,20 +4,21 @@
   width: 100%;
 }
 
-.review .container {
+.review__container {
   overflow: hidden;
   width: 752px;
   padding: 130px 0 106px;
+  margin: 0 auto;
 
   @include vp-1199 {
-    padding: 0 5px 100px;
+    padding: 100px 5px;
     width: 758px;
   }
 
   @include vp-767 {
     width: 100%;
     max-width: 767px;
-    padding: 0 0 70px;
+    padding: 96px 0 70px;
   }
 }
 
@@ -102,21 +103,44 @@
   padding: 0 40px;
 }
 
-.review__button:hover {
-  transition: 0.3s;
-  background-color: rgba(237, 2, 51, 0.1);
+.review__button svg {
+  width: 32px;
+
+  @include vp-767 {
+    width: 15px;
+    height: 15px;
+  }
 }
 
-.review__button:active {
+.review__button:hover svg,
+.review__button:focus svg {
   transition: 0.3s;
-  background-color: rgba(44, 57, 242, 0.1);
+  color: $color-sapphire;
+  border-radius: 50%;
+  outline: 1px solid $color-sapphire;
+  outline-offset: 12px;
+
+  @include vp-767 {
+    outline-offset: 8px;
+  }
 }
 
-.review__button.swiper-button-disabled:hover,
-.review__button.swiper-button-disabled:active {
+.review__button:active svg {
+  color: $color-default-white;
+  background-color: $color-sapphire;
+  border-radius: 50%;
+  outline: 10px solid $color-sapphire;
+  outline-offset: -1px;
+}
+
+.review__button.swiper-button-disabled:hover svg,
+.review__button.swiper-button-disabled:active svg {
+  color: $color-sapphire;
+  opacity: 0.3;
   background-color: transparent;
-  cursor: default;
+  border-color: transparent;
 }
+
 
 .review__button--right {
   @include vp-767 {
@@ -127,13 +151,6 @@
 .review__button--left {
   @include vp-767 {
     padding: 0 22px 0 15px;
-  }
-}
-
-.review__button svg {
-  @include vp-767 {
-    width: 10px;
-    height: 19px;
   }
 }
 
@@ -153,7 +170,7 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 55px 64px 56px;
+    padding: 55px 64px 40px;
     width: 566px;
   }
 
@@ -222,5 +239,6 @@
   @include vp-767 {
     text-align: center;
     grid-column: span 2;
+    font-size: 14px;
   }
 }
