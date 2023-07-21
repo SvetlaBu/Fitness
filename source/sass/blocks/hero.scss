@@ -12,8 +12,8 @@
 }
 
 .hero__wrapper {
-  width: 83.5%;
-  max-width: 1366px;
+  width: 1366px;
+  margin: 0 auto;
   overflow: hidden;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -25,12 +25,13 @@
   box-sizing: border-box;
 
   @include vp-1199 {
-    width: 100%;
+    width: 768px;
     padding: 80px 44px 80px 36px;
     grid-template-columns: 1fr 2fr 324px;
   }
 
   @include vp-767 {
+    width: 320px;
     padding: 30px 15px 76px 6px;
     grid-template-columns: 70px calc(100% - 70px);
   }
@@ -119,7 +120,7 @@
   }
 }
 
-.hero picture img {
+.hero img {
   width: 100%;
   object-fit: cover;
 

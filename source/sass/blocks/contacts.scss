@@ -16,6 +16,8 @@
 
   & .container {
     padding: 66px 106px;
+    margin-left: 0;
+    min-width: 50%;
 
     @include vp-1199 {
       padding: 56px 133px 68px;
@@ -154,6 +156,8 @@
   & .container {
     flex-direction: column;
     padding: 50px 123px 68px;
+    margin-left: 0;
+    min-width: 50%;
 
     @include vp-1199 {
       padding: 60px 133px;

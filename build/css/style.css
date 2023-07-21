@@ -1514,13 +1514,13 @@ button,
 @media (hover: hover) {
   .btn--hero:hover:not(.focus-visible) {
     background-color: #ffffff;
-    color: #103AAE;
+    color: #103aae;
     opacity: 1;
   }
 }
 .btn--hero .focus-visible:focus {
   background-color: #ffffff;
-  color: #103AAE;
+  color: #103aae;
   opacity: 1;
 }
 .btn--hero:active {
@@ -2273,7 +2273,9 @@ button,
 }
 
 .container {
-  width: 100%;
+  min-width: 1200px;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 30px 103px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2289,11 +2291,13 @@ button,
 }
 @media (max-width: 1199px) {
   .container {
+    max-width: 768px;
     padding: 40px 45px;
   }
 }
 @media (max-width: 767px) {
   .container {
+    width: 320px;
     padding: 20px 15px;
   }
 }
@@ -2343,8 +2347,8 @@ button,
 }
 
 .hero__wrapper {
-  width: 83.5%;
-  max-width: 1366px;
+  width: 1366px;
+  margin: 0 auto;
   overflow: hidden;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -2360,7 +2364,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__wrapper {
-    width: 100%;
+    width: 768px;
     padding: 80px 44px 80px 36px;
     -ms-grid-columns: 1fr 2fr 324px;
     grid-template-columns: 1fr 2fr 324px;
@@ -2368,6 +2372,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__wrapper {
+    width: 320px;
     padding: 30px 15px 76px 6px;
     -ms-grid-columns: 70px calc(100% - 70px);
     grid-template-columns: 70px calc(100% - 70px);
@@ -2480,13 +2485,13 @@ button,
   }
 }
 
-.hero picture img {
+.hero img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 767px) {
-  .hero picture img {
+  .hero img {
     display: none;
   }
 }
@@ -3262,7 +3267,7 @@ button,
 .offers__price b {
   position: relative;
   z-index: 3;
-  color: #103AAE;
+  color: #103aae;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -3368,7 +3373,10 @@ button,
 }
 
 .promo__container {
+  margin: 0 auto;
   padding: 190px 106px 45px;
+  min-width: 1200px;
+  max-width: 1366px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: -ms-grid;
   display: grid;
@@ -3382,12 +3390,13 @@ button,
     -ms-grid-columns: 292px calc(100% - 292px);
     grid-template-columns: 292px calc(100% - 292px);
     min-height: 292px;
-    max-width: 1119px;
+    max-width: 768px;
   }
 }
 @media (max-width: 767px) {
   .promo__container {
     padding: 140px 15px 64px;
+    min-width: 320px;
     max-width: 767px;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
@@ -3626,13 +3635,13 @@ button,
 @media (hover: hover) {
   .promo__link:hover:not(.focus-visible) {
     background-color: #ffffff;
-    color: #103AAE;
+    color: #103aae;
     opacity: 1;
   }
 }
 .promo__link .focus-visible:focus {
   background-color: #ffffff;
-  color: #103AAE;
+  color: #103aae;
   opacity: 1;
 }
 .promo__link:active {
@@ -3665,7 +3674,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #103AAE;
+  background-color: #103aae;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -4068,15 +4077,12 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages .container {
-    max-width: 1119px;
     padding-top: 93px;
     padding-bottom: 90px;
   }
 }
 @media (max-width: 767px) {
   .advantages .container {
-    min-width: 320px;
-    max-width: 767px;
     padding: 65px 0;
   }
 }
@@ -4294,7 +4300,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  color: #103AAE;
+  color: #103aae;
   text-transform: lowercase;
 }
 @media (max-width: 1199px) {
@@ -5422,6 +5428,8 @@ button,
 }
 .contacts__user .container {
   padding: 66px 106px;
+  margin-left: 0;
+  min-width: 50%;
 }
 @media (max-width: 1199px) {
   .contacts__user .container {
@@ -5613,6 +5621,8 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px 123px 68px;
+  margin-left: 0;
+  min-width: 50%;
 }
 @media (max-width: 1199px) {
   .contacts__company .container {
