@@ -45,7 +45,7 @@
     }
   }
 
-  &__element.is-active & {
+  .is-active & {
     position: absolute;
     top: 0;
     width: calc(100% - 260px);
@@ -204,7 +204,7 @@
     }
   }
 
-  &:after {
+  &::after {
     transform: rotate(90deg);
   }
 
@@ -214,7 +214,7 @@
     z-index: 4;
   }
 
-  &.is-active > .accordion__button:not(.accordion__toggle):after {
+  &.is-active > .accordion__button:not(.accordion__toggle)::after {
     background-color: $color-sapphire;
   }
 }
@@ -244,11 +244,11 @@
   }
 }
 
-.accordion__button:not(.accordion__toggle):after {
+.accordion__button:not(.accordion__toggle)::after {
   content: "";
   position: absolute;
   top: 27px;
-  right: 3px;
+  right: 2px;
   padding: 20px;
   background-color: transparent;
   height: 1.5px;

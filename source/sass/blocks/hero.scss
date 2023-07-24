@@ -82,7 +82,9 @@
 }
 
 .hero .hero__list {
-  @include cleaning;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   grid-column: 1/2;
   grid-row: 1/-1;
   margin-top: 300px;

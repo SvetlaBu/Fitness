@@ -98,10 +98,12 @@
 
 .coaches__button svg {
   width: 32px;
+  color: $color-sapphire;
 
   @include vp-767 {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 19px;
+    color: $color-sapphire;
   }
 }
 
@@ -147,16 +149,6 @@
   }
 }
 
-.coaches__button svg {
-  color: $color-sapphire;
-
-  @include vp-767 {
-    width: 10px;
-    height: 19px;
-    color: $color-sapphire;
-  }
-}
-
 .coaches__button--right svg {
   transform: rotate(180deg);
 }
@@ -165,21 +157,21 @@
   width: 100%;
 }
 
+.coaches__list,
+.coaches__item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .coaches__list {
-  @include cleaning;
   box-sizing: border-box;
   width: 100%;
   display: flex;
   position: relative;
-  padding: 0 96px;
-
-  @include vp-767 {
-    padding: 0 47px;
-  }
 }
 
 .coaches__item {
-  @include cleaning;
   position: relative;
   z-index: 3;
   display: block;

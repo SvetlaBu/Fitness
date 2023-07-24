@@ -17,30 +17,22 @@
       align-items: flex-start;
       flex-direction: column;
     }
+  }
 
-    input,
-    textarea {
-      flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
-      outline: none;
+  input,
+  textarea {
+    flex-grow: 1;
+    max-width: 300px;
+    min-height: 48px;
+    margin-left: auto;
+    padding: 10px;
+    outline: none;
 
-      transition: border 0.3s ease;
+    transition: border 0.3s ease;
 
-      @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
-      }
-
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
-
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
-      }
+    @media screen and (max-width: 767px) {
+      max-width: unset;
+      width: 100%;
     }
   }
 
@@ -65,43 +57,43 @@
       bottom: 20px;
     }
   }
+}
+
+.is-invalid {
+  input,
+  textarea {
+    border-bottom: 2px solid #ff1553;
+
+    &:focus,
+    &:hover {
+      border-bottom: 2px solid rgba(#ff1553, 0.5);
+    }
+  }
+}
+
+.is-valid {
+  input {
+    border-bottom: 2px solid $color-default-white;
+
+    &:focus,
+    &:hover {
+      border-bottom: 2px solid rgba($color-default-white, 0.5);
+    }
+  }
+}
+
+.input-message {
+  position: absolute;
+  width: max-content;
+  font-size: 14px;
+  left: 0;
+  bottom: -25px;
 
   &.is-invalid {
-    input,
-    textarea {
-      border-bottom: 2px solid #ff1553;
-
-      &:focus,
-      &:hover {
-        border-bottom: 2px solid rgba(#ff1553, 0.5);
-      }
-    }
+    color: #ff0000;
   }
 
   &.is-valid {
-    input {
-      border-bottom: 2px solid $color-default-white;
-
-      &:focus,
-      &:hover {
-        border-bottom: 2px solid rgba($color-default-white, 0.5);
-      }
-    }
-  }
-
-  .input-message {
-    position: absolute;
-    width: max-content;
-    font-size: 14px;
-    left: 0;
-    bottom: -25px;
-
-    &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: $color-default-white;
-    }
+    color: $color-default-white;
   }
 }

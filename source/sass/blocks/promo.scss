@@ -7,8 +7,7 @@
 .promo__container {
   margin: 0 auto;
   padding: 190px 106px 45px;
-  min-width: 1200px;
-  max-width: 1366px;
+  width: 1200px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: grid;
   grid-template-columns: 500px calc(100% - 500px);
@@ -18,13 +17,12 @@
     padding: 200px 46px 101px;
     grid-template-columns: 292px calc(100% - 292px);
     min-height: 292px;
-    max-width: 768px;
+    width: 768px;
   }
 
   @include vp-767 {
     padding: 140px 15px 64px;
-    min-width: 320px;
-    max-width: 767px;
+    width: 320px;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, max-content);
   }

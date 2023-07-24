@@ -49,10 +49,11 @@
 }
 
 .advantages__list {
-  @include cleaning;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
   position: relative;
   width: 89.6%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 32.7% 23% 32.7%;
   grid-template-rows: repeat(2, max-content);

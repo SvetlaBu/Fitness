@@ -19,9 +19,15 @@
   }
 }
 
+.nav-site ul,
+.nav-site li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .nav-site ul {
   @include flex;
-  @include cleaning;
   justify-content: space-between;
   column-gap: 20px;
 
@@ -38,7 +44,6 @@
 }
 
 .nav-site li {
-  @include cleaning;
   flex: 0 0 auto;
 }
 
@@ -51,22 +56,18 @@
 }
 
 .nav-site .nav-site__link {
-  padding: 10px;
-  position: relative;
+  padding: 10px 6px;
   display: block;
   box-sizing: border-box;
 
-  &:hover::after {
-    content: "";
-    position: absolute;
-    width: 76%;
-    height: 1px;
-    background-color: $color-default-white;
-    top: 30px;
-    left: 10px;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $color-default-white;
+    text-underline-offset: 10px;
   }
 
   &:focus {
+    text-decoration: none;
     outline: 1px solid $color-default-white;
   }
 
