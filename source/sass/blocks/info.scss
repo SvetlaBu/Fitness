@@ -6,6 +6,7 @@
 }
 
 .info .container {
+  width: 100%;
   position: relative;
   padding: 160px 120px 103px 166px;
   display: grid;
@@ -20,12 +21,13 @@
 
 
   @include vp-1199 {
+    width: 768px;
     padding: 96px 100px 103px 130px;
     grid-template-columns: 1fr;
   }
 
   @include vp-767 {
-    max-width: 767px;
+    width: 320px;
     padding: 0;
   }
 }

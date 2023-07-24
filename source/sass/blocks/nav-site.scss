@@ -8,7 +8,7 @@
   margin-left: 38px;
 
   @include vp-1199 {
-    flex: 0 1 380px;
+    flex: 0 1 420px;
     margin-left: 0;
   }
 
@@ -38,7 +38,9 @@
   @include vp-767 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 120px 120px;
+    justify-content: start;
+    grid-column-gap: 40px;
     grid-auto-flow: column;
   }
 }

@@ -6,22 +6,22 @@
 
 .promo__container {
   margin: 0 auto;
-  padding: 190px 106px 45px;
-  width: 1200px;
+  padding: 190px 8% 45px;
+  width: 100%;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: grid;
   grid-template-columns: 500px calc(100% - 500px);
   min-height: 500px;
 
   @include vp-1199 {
-    padding: 200px 46px 101px;
+    padding: 106px 46px 101px;
     grid-template-columns: 292px calc(100% - 292px);
     min-height: 292px;
     width: 768px;
   }
 
   @include vp-767 {
-    padding: 140px 15px 64px;
+    padding: 70px 15px 64px;
     width: 320px;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, max-content);

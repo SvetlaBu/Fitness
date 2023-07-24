@@ -6,10 +6,17 @@
   overflow-x: hidden;
   min-height: 790px;
 
+  @include vp-1199 {
+    min-height: 850px;
+  }
+
+  @include vp-767 {
+    min-height: 820px;
+  }
+
   & .container {
     padding: 128px 110px;
     box-sizing: border-box;
-    min-height: max-content;
 
     @include vp-1199 {
       padding: 110px 45px;

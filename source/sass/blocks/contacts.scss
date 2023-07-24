@@ -22,10 +22,12 @@
     @include vp-1199 {
       padding: 56px 133px 68px;
       margin: 0 auto;
+      width: 768px;
     }
 
     @include vp-767 {
       padding: 60px 15px 70px;
+      width: 320px;
     }
   }
 
@@ -133,7 +135,7 @@
   }
 
 
-  h2 {
+  & h2 {
     color: $color-default-white;
     font-size: 54px;
     font-weight: 800;
@@ -145,7 +147,7 @@
       margin-bottom: 12px;
     }
 
-    @include vp-1199 {
+    @include vp-767 {
       font-size: 32px;
     }
   }
@@ -164,10 +166,12 @@
     @include vp-1199 {
       padding: 60px 133px;
       margin: 0 auto;
+      width: 768px;
     }
 
     @include vp-767 {
       padding: 66px 15px 60px;
+      width: 320px;
     }
   }
 
@@ -182,7 +186,7 @@
       margin-bottom: 32px;
     }
 
-    @include vp-1199 {
+    @include vp-767 {
       font-size: 32px;
     }
   }
@@ -212,10 +216,6 @@
 
   @include vp-767 {
     grid-template-columns: 300px;
-
-    &--accent {
-      grid-row: 3/4;
-    }
   }
 
   & div {
@@ -259,5 +259,11 @@
     @include vp-1199 {
       display: none;
     }
+  }
+}
+
+.contacts__accent {
+  @include vp-767 {
+    grid-row: 3/4;
   }
 }
