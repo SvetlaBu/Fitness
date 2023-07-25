@@ -1,6 +1,8 @@
 .social {
   @include flex;
-  justify-content: space-between;
+  justify-content: start;
+  width: 110px;
+  align-self: flex-end;
 }
 
 .social,

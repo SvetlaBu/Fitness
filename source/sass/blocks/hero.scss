@@ -13,19 +13,21 @@
 
 .hero__wrapper {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1066px;
+  margin-left: 0;
   overflow: hidden;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: $color-default-white;
   display: grid;
-  grid-template-columns: 1fr 2fr 564px;
+  grid-template-columns: 133px 260px 564px;
   padding: 52px 8%;
   box-sizing: border-box;
 
   @include vp-1199 {
     width: 768px;
+    margin: 0 auto;
     padding: 80px 44px 80px 36px;
     grid-template-columns: 1fr 2fr 324px;
   }
@@ -64,8 +66,8 @@
 .hero__wrapper span {
   position: absolute;
   font-size: 42px;
-  top: -66px;
-  left: 120px;
+  top: -62px;
+  left: 112px;
 
   @include vp-1199 {
     top: -70px;
@@ -106,7 +108,7 @@
   @include hover-focus {
     text-decoration: underline;
     text-decoration-color: $color-default-white;
-    text-underline-offset: 10px;
+    text-underline-offset: 4px;
   }
 
   @include active {

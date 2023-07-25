@@ -7,18 +7,18 @@
 .review__container {
   overflow: hidden;
   width: 752px;
-  padding: 140px 0 96px;
+  padding: 140px 0 120px;
   margin: 0 auto;
 
   @include vp-1199 {
-    padding: 100px 5px 120px;
+    padding: 100px 5px 100px;
     width: 758px;
   }
 
   @include vp-767 {
     width: 100%;
     max-width: 767px;
-    padding: 66px 0 90px;
+    padding: 66px 0 70px;
   }
 }
 
@@ -50,25 +50,18 @@
 
 .review__wrapper {
   position: relative;
-  padding: 0 96px;
-
-  @include vp-767 {
-    padding: 0 47px;
-  }
 }
 
 .review__slider {
   margin: 0 auto;
   width: 560px;
-  height: fit-content;
 
   @include vp-1199 {
     width: 566px;
   }
 
   @include vp-767 {
-    width: auto;
-    min-width: 226px;
+    width: 226px;
     max-width: 566px;
   }
 }
@@ -163,12 +156,14 @@
   grid-row-gap: 12px;
   padding: 54px 62px 55px;
   margin: 0 auto;
+  min-height: 239px;
   width: 560px;
   background-color: $color-resolution-blue;
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 55px 64px 40px;
+    padding: 55px 64px 60px;
+    min-height: 245px;
     width: 566px;
   }
 
@@ -176,10 +171,12 @@
     padding: 40px 25px 35px;
     min-width: 226px;
     max-width: 566px;
+    min-height: 334px;
     width: auto;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px auto;
     grid-column-gap: 16px;
-    grid-row-gap: 18px;
+    grid-row-gap: 0;
   }
 }
 
@@ -224,6 +221,7 @@
   @include vp-767 {
     width: 100%;
     margin-top: 5px;
+    line-height: 26px;
   }
 }
 

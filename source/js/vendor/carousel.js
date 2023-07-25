@@ -12,7 +12,6 @@ const carouselReview = () => {
       spaceBetween: 560,
       slidesPerView: 1,
       speed: 600,
-      autoHeight: true,
     });
   }
 };

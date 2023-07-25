@@ -5,7 +5,7 @@
 }
 
 .showcase .container {
-  padding-top: 169px;
+  padding-top: 139px;
   padding-bottom: 117px;
 
   @include vp-1199 {
@@ -91,7 +91,7 @@
   border: none;
   grid-row: span 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 277px 277px;
 
   @include vp-1199 {
     grid-column: span 2;
