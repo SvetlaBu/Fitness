@@ -8,6 +8,7 @@
 
 .offers .container {
   padding-top: 136px;
+  position: relative;
   display: flex;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -145,7 +146,6 @@
 
 .offers__list {
   transition: 0.3s;
-  position: relative;
   z-index: 2;
   display: none;
   width: 100%;
@@ -155,8 +155,9 @@
 
 .offers__list--active {
   display: grid;
-  grid-template-columns: repeat(3, 31%);
+  grid-template-columns: repeat(3, 300px);
   grid-gap: 3.4%;
+  width: 966px;
 
   @include vp-1199 {
     min-width: 442px;

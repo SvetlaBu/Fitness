@@ -6,8 +6,9 @@
 
 .promo__container {
   margin: 0 auto;
-  padding: 190px 8% 45px;
+  padding: 190px 60px 45px;
   width: 100%;
+  max-width: 1366px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   display: grid;
   grid-template-columns: 500px calc(100% - 500px);
