@@ -16,9 +16,9 @@
 
   @include vp-1199 {
     padding: 106px 46px 101px;
-    grid-template-columns: 292px calc(100% - 292px);
+    grid-template-columns: 40% 60%;
     min-height: 292px;
-    width: 768px;
+    min-width: 768px;
   }
 
   @include vp-767 {

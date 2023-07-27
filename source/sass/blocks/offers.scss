@@ -18,8 +18,6 @@
 
   @include vp-1199 {
     padding: 96px 163px 90px;
-    padding-left: 163px;
-    padding-right: 163px;
   }
 
   @include vp-767 {
@@ -28,12 +26,12 @@
   }
 }
 
-.offers__back {
+.offers img {
   display: block;
   position: absolute;
   z-index: 1;
-  bottom: -220px;
-  right: 0;
+  bottom: -180px;
+  right: -20px;
   width: 287px;
 
   @include vp-1199 {
@@ -164,6 +162,7 @@
     margin: 44px auto 0;
     grid-template-columns: 100%;
     grid-gap: 40px;
+    width: 100%;
   }
 
   @include vp-767 {

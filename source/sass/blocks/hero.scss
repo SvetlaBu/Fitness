@@ -25,14 +25,15 @@
   box-sizing: border-box;
 
   @include vp-1199 {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     padding: 80px 44px 80px 36px;
     grid-template-columns: 1fr 2fr 324px;
   }
 
   @include vp-767 {
-    width: 320px;
+    min-width: 320px;
+    max-width: 767px;
     padding: 30px 15px 76px 6px;
     grid-template-columns: 70px calc(100% - 70px);
   }

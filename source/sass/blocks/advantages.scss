@@ -53,6 +53,7 @@
   padding: 0;
   list-style-type: none;
   position: relative;
+  min-width: 862px;
   width: 89.6%;
   display: grid;
   grid-template-columns: 32.7% 23% 32.7%;
@@ -62,8 +63,9 @@
 
   @include vp-1199 {
     width: 100%;
-    grid-template-columns: repeat(2, 325px);
-    grid-column-gap: calc(100% - 650px);
+    min-width: 598px;
+    grid-template-columns: repeat(2, 46.5%);
+    grid-column-gap: 6%;
     grid-row-gap: 43px;
   }
 
@@ -77,7 +79,6 @@
   width: 100%;
   display: flex;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  justify-content: space-between;
   min-height: 156px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
@@ -100,12 +101,12 @@
 .advantages__item--main {
   align-self: stretch;
   background-color: $color-resolution-blue;
-  width: 240px;
+  min-width: 200px;
   min-height: 307px;
   grid-column: 2 / 3;
   grid-row: 1 / -1;
   color: $color-default-white;
-  padding: 68px 34px 60px;
+  padding: 68px 5% 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,12 +181,12 @@
 }
 
 .advantages__about span {
-  margin-top: 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: $color-egyptian-blue;
   text-transform: lowercase;
+  display: block;
 
   @include vp-1199 {
     line-height: 15px;

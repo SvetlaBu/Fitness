@@ -1581,7 +1581,7 @@ button,
   border-radius: 50%;
 }
 .btn--info:active {
-  background-color: #ffffff;
+  background: #ffffff;
   color: #102654;
   opacity: 1;
   outline: 2px solid #102654;
@@ -1777,13 +1777,13 @@ button,
 }
 @media (max-width: 1199px) {
   .container {
-    width: 768px;
+    min-width: 768px;
     padding: 40px 45px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    width: 320px;
+    min-width: 320px;
     padding: 20px 15px;
   }
 }
@@ -1850,7 +1850,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__wrapper {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     padding: 80px 44px 80px 36px;
     -ms-grid-columns: 1fr 2fr 324px;
@@ -1859,7 +1859,8 @@ button,
 }
 @media (max-width: 767px) {
   .hero__wrapper {
-    width: 320px;
+    min-width: 320px;
+    max-width: 767px;
     padding: 30px 15px 76px 6px;
     -ms-grid-columns: 70px calc(100% - 70px);
     grid-template-columns: 70px calc(100% - 70px);
@@ -2286,7 +2287,9 @@ button,
 }
 @media (max-width: 767px) {
   .info .container {
-    width: 320px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 767px;
     padding: 0;
   }
 }
@@ -2372,6 +2375,18 @@ button,
     text-align: start;
   }
 }
+@media (max-width: 767px) {
+  .info__text p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  .info img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 @media (max-width: 1199px) {
   .info__add {
@@ -2401,6 +2416,7 @@ button,
 @media (max-width: 767px) {
   .info__video {
     width: 100%;
+    height: 36%;
     margin: 0;
     margin-top: 356px;
   }
@@ -2408,6 +2424,8 @@ button,
 .info__video img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .info__video::before {
@@ -2526,8 +2544,6 @@ button,
 @media (max-width: 1199px) {
   .offers .container {
     padding: 96px 163px 90px;
-    padding-left: 163px;
-    padding-right: 163px;
   }
 }
 @media (max-width: 767px) {
@@ -2537,23 +2553,23 @@ button,
   }
 }
 
-.offers__back {
+.offers img {
   display: block;
   position: absolute;
   z-index: 1;
-  bottom: -220px;
-  right: 0;
+  bottom: -180px;
+  right: -20px;
   width: 287px;
 }
 @media (max-width: 1199px) {
-  .offers__back {
+  .offers img {
     bottom: -125px;
     width: 347px;
     right: 0;
   }
 }
 @media (max-width: 767px) {
-  .offers__back {
+  .offers img {
     display: none;
   }
 }
@@ -2704,6 +2720,7 @@ button,
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     grid-gap: 40px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -2918,10 +2935,10 @@ button,
 @media (max-width: 1199px) {
   .promo__container {
     padding: 106px 46px 101px;
-    -ms-grid-columns: 292px calc(100% - 292px);
-    grid-template-columns: 292px calc(100% - 292px);
+    -ms-grid-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
     min-height: 292px;
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (max-width: 767px) {
@@ -3417,19 +3434,19 @@ button,
   z-index: 3;
   display: block;
   width: 22.4%;
-  height: 294px;
+  height: 21.5%;
 }
 @media (max-width: 1199px) {
   .coaches__item {
     width: 47.3%;
-    height: 294px;
+    height: 38.2%;
   }
 }
 @media (max-width: 767px) {
   .coaches__item {
     height: auto;
     width: 100%;
-    min-height: 274px;
+    min-height: 85.6%;
   }
 }
 
@@ -3636,6 +3653,7 @@ button,
   padding: 0;
   list-style-type: none;
   position: relative;
+  min-width: 862px;
   width: 89.6%;
   display: -ms-grid;
   display: grid;
@@ -3651,9 +3669,10 @@ button,
 @media (max-width: 1199px) {
   .advantages__list {
     width: 100%;
-    -ms-grid-columns: (325px)[2];
-    grid-template-columns: repeat(2, 325px);
-    grid-column-gap: calc(100% - 650px);
+    min-width: 598px;
+    -ms-grid-columns: (46.5%)[2];
+    grid-template-columns: repeat(2, 46.5%);
+    grid-column-gap: 6%;
     grid-row-gap: 43px;
   }
 }
@@ -3671,9 +3690,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   min-height: 156px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
@@ -3702,14 +3718,14 @@ button,
   -ms-grid-row-align: stretch;
       align-self: stretch;
   background-color: #1c3374;
-  width: 240px;
+  min-width: 200px;
   min-height: 307px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   grid-row: 1/-1;
   color: #ffffff;
-  padding: 68px 34px 60px;
+  padding: 68px 5% 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3811,12 +3827,12 @@ button,
 }
 
 .advantages__about span {
-  margin-top: 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: #103aae;
   text-transform: lowercase;
+  display: block;
 }
 @media (max-width: 1199px) {
   .advantages__about span {
@@ -4945,20 +4961,23 @@ button,
 }
 .contacts__user .container {
   padding: 66px 76px 66px 106px;
-  margin-left: 0;
   width: 100%;
+  max-width: 600px;
+  margin: 0 0 0 auto;
 }
 @media (max-width: 1199px) {
   .contacts__user .container {
     padding: 66px 133px 68px;
     margin: 0 auto;
-    width: 768px;
+    min-width: 768px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
   .contacts__user .container {
     padding: 60px 15px 70px;
-    width: 320px;
+    min-width: 320px;
+    max-width: 767px;
   }
 }
 .contacts__user form {
@@ -4973,8 +4992,9 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts__user form {
-    -ms-grid-columns: 206px 206px;
-    grid-template-columns: 206px 206px;
+    width: 100%;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 60px;
        -moz-column-gap: 60px;
             column-gap: 60px;
@@ -5141,8 +5161,8 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px 123px 68px;
-  margin-left: 0;
   width: 100%;
+  margin: 0 auto 0 0;
 }
 @media (max-width: 1199px) {
   .contacts__company .container {
@@ -5178,6 +5198,7 @@ button,
 .contacts__info {
   display: -ms-grid;
   display: grid;
+  margin: 0 auto 0 0;
   -ms-grid-columns: 200px 200px;
   grid-template-columns: 200px 200px;
   -ms-grid-rows: 1fr 1fr;
@@ -5247,7 +5268,7 @@ button,
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 1px;
-  height: 102px;
+  height: 90%;
   background-color: #74819c;
   z-index: 2;
 }
