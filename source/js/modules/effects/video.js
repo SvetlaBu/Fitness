@@ -17,7 +17,7 @@ const setupVideo = (video) => {
     button.remove();
     video.appendChild(iframe);
     video.classList.add('info__video--active');
-  });
+  }, {once: true});
 
   link.removeAttribute('href');
   video.classList.add('info__video--enabled');

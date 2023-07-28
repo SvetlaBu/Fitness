@@ -13,9 +13,10 @@
   }
 
   @include vp-767 {
-    flex: 0 0 300px;
+    flex: 0 0 100%;
     padding-bottom: 26px;
     flex-direction: column-reverse;
+    margin: 0 auto;
   }
 }
 
@@ -41,7 +42,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 120px 120px;
-    justify-content: start;
+    justify-content: space-between;
     grid-column-gap: 40px;
     grid-auto-flow: row;
     margin-left: 0;

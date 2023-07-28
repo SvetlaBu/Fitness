@@ -5,6 +5,7 @@
   width: 100%;
   overflow-x: hidden;
   min-height: 790px;
+  scrollbar-width: none;
 
   @include vp-1199 {
     min-height: 850px;
@@ -45,4 +46,8 @@
       margin: 0 auto 30px;
     }
   }
+}
+
+.questions::-webkit-scrollbar {
+  width: 0;
 }

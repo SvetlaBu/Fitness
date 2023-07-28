@@ -6,13 +6,13 @@
 
 .review__container {
   overflow: hidden;
-  width: 752px;
+  max-width: 966px;
   padding: 140px 0 120px;
   margin: 0 auto;
 
   @include vp-1199 {
     padding: 100px 5px 100px;
-    width: 758px;
+    max-width: 1199px;
   }
 
   @include vp-767 {
@@ -54,15 +54,18 @@
 
 .review__slider {
   margin: 0 auto;
-  width: 560px;
+  max-width: 660px;
+  min-height: 239px;
+  min-width: 560px;
 
   @include vp-1199 {
-    width: 566px;
+    min-height: 245px;
+    width: 75%;
   }
 
   @include vp-767 {
-    width: 226px;
-    max-width: 566px;
+    min-width: 260px;
+    width: 65%;
   }
 }
 
@@ -72,16 +75,19 @@
   transform: translate(-50%, 0);
   display: flex;
   position: absolute;
-  width: 752px;
+  min-width: 752px;
+  width: 95%;
   height: 100%;
   justify-content: space-between;
 
   @include vp-1199 {
-    width: 758px;
+    min-width: 768px;
+    width: 95%;
   }
 
   @include vp-767 {
-    width: 320px;
+    min-width: 320px;
+    width: 95%;
   }
 }
 
@@ -156,23 +162,15 @@
   grid-row-gap: 12px;
   padding: 54px 62px 55px;
   margin: 0 auto;
-  min-height: 239px;
-  width: 560px;
   background-color: $color-resolution-blue;
   color: $color-default-white;
 
   @include vp-1199 {
     padding: 55px 64px 60px;
-    min-height: 245px;
-    width: 566px;
   }
 
   @include vp-767 {
     padding: 40px 25px 35px;
-    min-width: 226px;
-    max-width: 566px;
-    min-height: 334px;
-    width: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px auto;
     grid-column-gap: 16px;
