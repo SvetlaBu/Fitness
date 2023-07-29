@@ -2,19 +2,19 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 30px 8%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  // padding: 30px 8%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  // align-items: center;
 
   @include vp-1199 {
     min-width: 768px;
-    padding: 40px 45px;
+    // padding: 40px 45px;
   }
 
   @include vp-767 {
     min-width: 320px;
-    padding: 20px 15px;
+    // padding: 20px 15px;
   }
 }

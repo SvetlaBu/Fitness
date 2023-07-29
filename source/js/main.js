@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {changeOffers} from './modules/effects/offers';
 import {carouselReview, sliderCoachers} from './vendor/carousel';
-
+import {initTabs} from './modules/effects/init-tabs';
 import {initAccordions} from './modules/effects/init-accordion';
 import {findVideos} from './modules/effects/video';
 
@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initTabs();
   changeOffers();
   initAccordions();
   findVideos();

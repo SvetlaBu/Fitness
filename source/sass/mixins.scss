@@ -92,13 +92,13 @@
   transform: translate(-50%, -50%);
 }
 
-// Mobile first
+@mixin vp-1365 {
+  @media (min-width: $vp-1365) {
+    @content;
+  }
+}
 
-// @mixin vp-375 {
-//   @media (min-width: $vp-375) {
-//     @content;
-//   }
-// }
+// Mobile first
 
 // @mixin vp-768 {
 //   @media (min-width: $vp-768) {
