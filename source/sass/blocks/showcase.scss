@@ -5,8 +5,7 @@
 }
 
 .showcase .container {
-  padding-top: 139px;
-  padding-bottom: 117px;
+  padding: 139px 104px 117px;
 
   @include vp-1199 {
     padding-top: 95px;

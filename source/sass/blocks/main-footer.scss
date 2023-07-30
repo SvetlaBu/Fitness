@@ -21,6 +21,10 @@
 
 .main-footer .container {
   padding: 30px 96px 30px 106px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
   @include vp-1199 {
     padding: 40px 36px 54px 45px;

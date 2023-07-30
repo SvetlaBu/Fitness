@@ -30,9 +30,9 @@
   display: block;
   position: absolute;
   z-index: 1;
-  bottom: -180px;
-  right: -20px;
-  width: 287px;
+  bottom: -255px;
+  right: -190px;
+  width: 470px;
 
   @include vp-1199 {
     bottom: -125px;
@@ -152,10 +152,10 @@
 }
 
 .offers__list--active {
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3,26%);
   grid-gap: 3.4%;
-  width: 966px;
 
   @include vp-1199 {
     min-width: 442px;

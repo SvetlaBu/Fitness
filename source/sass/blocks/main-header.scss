@@ -4,6 +4,14 @@
   width: 100%;
 }
 
+.main-header .container {
+  padding: 30px 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-header__item {
   transition: $trans-default;
   font-family: "Alumni Sans", "Arial", sans-serif;
