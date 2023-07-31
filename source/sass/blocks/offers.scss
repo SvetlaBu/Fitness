@@ -17,12 +17,13 @@
   align-items: center;
 
   @include vp-1199 {
-    padding: 96px 163px 90px;
+    padding: 98px 163px 90px;
   }
 
   @include vp-767 {
-    width: 320px;
-    padding: 136px 10px 70px;
+    min-width: 320px;
+    width: 100%;
+    padding: 132px 10px 70px;
   }
 }
 
@@ -35,9 +36,9 @@
   width: 470px;
 
   @include vp-1199 {
-    bottom: -125px;
-    width: 347px;
-    right: 0;
+    bottom: -135px;
+    width: 416px;
+    right: -70px;
   }
 
   @include vp-767 {
@@ -63,14 +64,12 @@
     margin-bottom: 11px;
     font-size: 42px;
     line-height: 50px;
-    padding-right: 13px;
   }
 
   @include vp-767 {
     max-width: 147px;
     font-size: 32px;
     line-height: 38px;
-    padding-right: 10px;
   }
 }
 
@@ -121,6 +120,10 @@
     opacity: 0.7;
   }
 
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -154,7 +157,7 @@
 .offers__list--active {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(3,26%);
+  grid-template-columns: repeat(3, 26%);
   grid-gap: 3.4%;
 
   @include vp-1199 {

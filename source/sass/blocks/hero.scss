@@ -34,7 +34,8 @@
   @include vp-767 {
     min-width: 320px;
     max-width: 767px;
-    padding: 30px 15px 76px 6px;
+    padding: 22px 15px 80px 6px;
+    line-height: 22px;
     grid-template-columns: 70px calc(100% - 70px);
   }
 }
@@ -97,7 +98,7 @@
   }
 
   @include vp-767 {
-    margin-top: 206px;
+    margin-top: 210px;
   }
 }
 
@@ -112,6 +113,14 @@
 
   @include active {
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: $color-default-white;
+    text-underline-offset: 4px;
+    border: none;
+    outline: none;
   }
 }
 

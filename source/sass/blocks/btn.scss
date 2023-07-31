@@ -46,6 +46,15 @@
     opacity: 1;
   }
 
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+    opacity: 1;
+    outline: none;
+    appearance: none;
+    border: none;
+  }
+
   &:active {
     background-color: $color-default-white;
     color: $color-sapphire;
@@ -61,7 +70,7 @@
   @include vp-1199 {
     width: 190px;
     padding: 16px;
-    margin: 32px 0 20px 14px;
+    margin: 36px 0 20px 14px;
     align-items: center;
   }
 
@@ -81,12 +90,14 @@
   background: $linear-blue-to-red;
   border-radius: 50%;
   z-index: 2;
+  cursor: pointer;
 
   @include vp-1199 {
     padding: 20px;
   }
 
   &:hover,
+  &:focus-visible,
   &:focus {
     background: $color-default-white;
     color: $color-sapphire;

@@ -15,8 +15,8 @@
   min-height: 500px;
 
   @include vp-1199 {
-    padding: 106px 46px 101px;
-    grid-template-columns: 40% 60%;
+    padding: 112px 46px 101px;
+    grid-template-columns: 43% 57%;
     min-height: 292px;
     min-width: 768px;
   }
@@ -199,6 +199,18 @@
     background-color: $color-default-white;
     color: $color-egyptian-blue;
     opacity: 1;
+    outline: none;
+    border: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+    opacity: 1;
+    outline: none;
+    border: none;
   }
 
   &:active {

@@ -2,7 +2,7 @@
   @include flex;
   justify-content: start;
   width: 110px;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .social,
@@ -30,11 +30,21 @@
   position: relative;
   cursor: pointer;
 
+  &:hover,
+  &:focus-visible,
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
   &:hover svg,
+  &:focus-visible svg,
   &:focus svg {
     background-color: #103aae;
     border-radius: 50%;
     color: $color-default-white;
+    outline: none;
+    border: none;
   }
 
   &:active svg {
