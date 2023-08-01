@@ -66,12 +66,7 @@
               <img class="info__background" width="320" height="313" src="img/gym-mobile.jpg" srcset="img/gym-mobile@2.jpg" alt="Светлый зал со спортивыми тренажерами.">
             </picture>
             <div class="info__video" id="video">
-              <a class="info__link" href="https://www.youtube.com/embed/9TZXsZItgdw" target="_blank" id="video-on">
-                <button class="btn btn--info" id="video-button" aria-label="Кнопка включения видео.">
-                  <svg width="13" height="13">
-                    <use xlink:href="img/sprite/sprite.svg#play"></use>
-                  </svg>
-                </button>
+              <div class="info__link" id="video-on">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/info-video-desktop.webp, img/info-video-desktop@2.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/info-video-desktop.jpg, img/info-video-desktop@2.jpg 2x">
@@ -80,7 +75,12 @@
                   <source type="image/webp" srcset="img/info-video-mobile.webp, img/info-video-mobile@2.webp 2x">
                   <img width="320" height="167" src="img/info-video-mobile.jpg" srcset="img/info-video-mobile@2.jpg" alt="Внутри тренажерного зала.">
                 </picture>
-              </a>
+                <button class="btn btn--info" id="video-button" aria-label="Кнопка включения видео.">
+                  <svg width="13" height="13">
+                    <use xlink:href="img/sprite/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
