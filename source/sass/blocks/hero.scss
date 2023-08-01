@@ -24,6 +24,10 @@
   padding: 52px 0 52px 2%;
   box-sizing: border-box;
 
+  @include vp-1440 {
+    margin: 0 auto;
+  }
+
   @include vp-1199 {
     min-width: 768px;
     margin: 0 auto;

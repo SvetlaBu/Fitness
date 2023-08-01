@@ -82,6 +82,7 @@
     color: $color-sapphire;
 
     background-color: $color-transparent;
+    outline: none;
     border: 1px solid rgba($color-sapphire, 0.2);
     cursor: pointer;
 
@@ -91,11 +92,16 @@
     }
 
     @include hover-focus {
-      border-color: $color-sapphire;
       outline: none;
+      border: 1px solid $color-sapphire;
     }
 
-    &.is-active {
+    &:focus-visible {
+      outline: 1px solid $color-sapphire;
+    }
+
+    &.is-active,
+    &:active {
       color: $color-default-white;
 
       background-image: $linear-blue-to-red;
@@ -217,6 +223,27 @@
       }
     }
 
+    &:focus-visible {
+      background-color: $color-sapphire;
+
+      &::before,
+      &::after {
+        background-color: $color-default-white;
+      }
+
+      svg {
+        stroke: $color-default-white;
+      }
+    }
+
+    &:visited {
+      background-color: $color-transparent;
+    }
+
+    &:visited svg {
+      stroke: $color-sapphire;
+    }
+
     &:disabled {
       opacity: 0.3;
 
@@ -274,6 +301,13 @@
         opacity: 0.8;
       }
     }
+
+    p {
+      width: 78%;
+
+      @include vp-1199 {
+        width: 100%;
+      }
+    }
   }
 }
-

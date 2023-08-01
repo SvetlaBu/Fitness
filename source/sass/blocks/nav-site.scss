@@ -48,6 +48,10 @@
     grid-column-gap: 40px;
     grid-auto-flow: row;
     margin-left: 0;
+    width: 100%;
+  }
+
+  @include vp-374 {
     width: 80%;
   }
 }

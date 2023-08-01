@@ -314,7 +314,7 @@
 .advantages__description--main h3 {
   color: $color-default-white;
   text-align: center;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 39px;
   letter-spacing: 0.08em;
@@ -332,13 +332,14 @@
 
 .advantages__description--main p {
   text-align: center;
-  margin: 0;
-  margin-top: 34px;
+  margin: 34px auto 0;
+  width: 80%;
 
   @include vp-1199 {
     margin-top: 10px;
     border: none;
     line-height: 22px;
+    width: 100%;
   }
 
   @include vp-767 {
