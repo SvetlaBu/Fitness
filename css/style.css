@@ -4019,6 +4019,11 @@ button,
   margin: 0 auto;
   background-color: #1c3374;
   color: #ffffff;
+  visibility: hidden;
+}
+
+.review__item.swiper-slide-active {
+  visibility: visible;
 }
 
 .review__pic {
