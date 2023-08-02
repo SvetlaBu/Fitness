@@ -524,6 +524,10 @@ template {
   visibility: hidden;
 }
 
+.swiper-slide-duplicate:not(:not(.swiper-slide-duplicate) ~ .swiper-slide-duplicate) {
+  visibility: hidden;
+}
+
 /* Auto Height */
 
 .swiper-autoheight,
@@ -2203,6 +2207,9 @@ button,
   margin-top: -86px;
   width: 364px;
   position: relative;
+  padding-bottom: 62.63%;
+  height: 0;
+  overflow: hidden;
 }
 
 .info__video img,
@@ -2262,6 +2269,16 @@ button,
 
 .info__link .btn--info {
   position: absolute;
+}
+
+.info__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
 }
 
 .info__video--active::after,
@@ -3010,12 +3027,12 @@ button,
   -ms-flex-pack: start;
   justify-content: flex-start;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   list-style-type: disc;
   max-width: 160px;
   margin-left: 38px;
-  margin-top: 36px;
+  margin-top: 30px;
   padding-left: 0;
 }
 
@@ -3539,7 +3556,8 @@ button,
 }
 
 .questions__control:focus-visible {
-  outline: 1px solid #102654;
+  outline: none;
+  border: 1px solid #102654;
 }
 
 .questions__control.is-active,
@@ -4404,8 +4422,10 @@ button,
   }
 
   .info .container {
-    min-width: 768px;
+    min-width: 266px;
     max-width: 1199px;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
     padding: 98px 100px 103px 130px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -4447,11 +4467,12 @@ button,
   }
 
   .info__video {
-    height: auto;
-    grid-row: 2/-1;
-    grid-column: 1/-1;
-    margin-top: 158px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin-top: 200px;
     width: 49%;
+    padding-bottom: 30.78%;
     margin-left: -30px;
     -ms-grid-column-align: center;
     justify-self: center;
@@ -4638,6 +4659,7 @@ button,
   .coaches__item:hover .coaches__about,
   .coaches__item:active .coaches__about,
   .coaches__item:focus-visible .coaches__about {
+    font-size: 14px;
     margin-top: 32px;
   }
 
@@ -5151,7 +5173,8 @@ button,
   .info__video {
     width: 100%;
     margin: 0;
-    margin-top: 356px;
+    margin-top: 339px;
+    padding-bottom: 52.19%;
   }
 
   .info__background {
@@ -5707,7 +5730,7 @@ button,
   }
 
   .contacts__user button {
-    margin-top: 24px;
+    margin-top: 28px;
   }
 
   .contacts__user h2 {
@@ -5715,7 +5738,7 @@ button,
   }
 
   .contacts__company .container {
-    padding: 54px 15px 60px;
+    padding: 58px 15px 60px;
     width: 320px;
   }
 
