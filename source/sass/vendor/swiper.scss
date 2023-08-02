@@ -65,6 +65,12 @@
   visibility: hidden;
 }
 
+.swiper-slide-duplicate {
+  &:not(:not(&) ~ &) {
+    visibility: hidden;
+  }
+}
+
 /* Auto Height */
 .swiper-autoheight,
 .swiper-autoheight .swiper-slide {

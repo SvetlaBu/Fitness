@@ -97,7 +97,8 @@
     }
 
     &:focus-visible {
-      outline: 1px solid $color-sapphire;
+      outline: none;
+      border: 1px solid $color-sapphire;
     }
 
     &.is-active,
