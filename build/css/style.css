@@ -3687,6 +3687,7 @@ button,
   width: 100%;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   text-align: center;
   font-weight: 700;
