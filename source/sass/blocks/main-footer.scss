@@ -10,6 +10,7 @@
   display: block;
 
   @include vp-1199 {
+    margin-top: 6px;
     width: 82px;
   }
 

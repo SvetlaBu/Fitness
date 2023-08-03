@@ -10,7 +10,7 @@
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $color-egyptian-blue;
   border: none;
   cursor: pointer;
 
@@ -40,9 +40,16 @@
   margin-left: 38px;
   align-self: start;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: $color-default-white;
     color: $color-egyptian-blue;
+  }
+
+  &:active,
+  &:active:not(.focus-visible) {
+    background-color: $color-default-white;
+    color: $color-sapphire;
     opacity: 1;
   }
 
@@ -53,12 +60,6 @@
     outline: none;
     appearance: none;
     border: none;
-  }
-
-  &:active {
-    background-color: $color-default-white;
-    color: $color-sapphire;
-    opacity: 1;
   }
 
   &:disabled {

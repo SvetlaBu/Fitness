@@ -1501,16 +1501,13 @@ button,
   -ms-grid-row-align: start;
       align-self: start;
 }
-@media (hover: hover) {
-  .btn--hero:hover:not(.focus-visible) {
-    background-color: #ffffff;
-    color: #103aae;
-    opacity: 1;
-  }
-}
-.btn--hero .focus-visible:focus {
+.btn--hero:hover, .btn--hero:focus {
   background-color: #ffffff;
   color: #103aae;
+}
+.btn--hero:active, .btn--hero:active:not(.focus-visible) {
+  background-color: #ffffff;
+  color: #102654;
   opacity: 1;
 }
 .btn--hero:focus-visible {
@@ -1522,11 +1519,6 @@ button,
      -moz-appearance: none;
           appearance: none;
   border: none;
-}
-.btn--hero:active {
-  background-color: #ffffff;
-  color: #102654;
-  opacity: 1;
 }
 .btn--hero:disabled {
   background-color: rgba(255, 255, 255, 0);
@@ -2061,6 +2053,7 @@ button,
 }
 @media (max-width: 1199px) {
   .main-footer .logo {
+    margin-top: 6px;
     width: 82px;
   }
 }
@@ -3075,7 +3068,7 @@ button,
 }
 @media (max-width: 1199px) {
   .promo__container {
-    padding: 112px 46px 101px;
+    padding: 112px 46px 97px;
     -ms-grid-columns: 43% 57%;
     grid-template-columns: 43% 57%;
     min-height: 292px;
@@ -3316,7 +3309,7 @@ button,
     margin-top: auto;
     font-size: 10px;
     line-height: 12px;
-    padding: 12px;
+    padding: 14px;
     border: 2px solid #ffffff;
   }
 }
@@ -3343,7 +3336,7 @@ button,
   outline: none;
   border: 2px solid #ffffff;
 }
-.promo__link:active {
+.promo__link:active, .promo__link:active:not(.focus-visible) {
   background-color: #ffffff;
   color: #102654;
 }
@@ -3401,7 +3394,7 @@ button,
 @media (max-width: 1199px) {
   .coaches__container {
     padding: 0 0 91px;
-    padding-bottom: 96px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -3448,12 +3441,12 @@ button,
 }
 @media (max-width: 1199px) {
   .coaches__inner {
-    padding: 0 105px;
+    padding: 0 101px;
   }
 }
 @media (max-width: 767px) {
   .coaches__inner {
-    padding: 0 38px;
+    padding: 0 45px;
   }
 }
 
@@ -3590,6 +3583,18 @@ button,
 
 .coaches__slider {
   width: 100%;
+  height: auto;
+}
+@media (max-width: 1199px) {
+  .coaches__slider {
+    width: 99%;
+  }
+}
+@media (max-width: 374px) {
+  .coaches__slider {
+    width: 100%;
+    height: 278px;
+  }
 }
 
 .coaches__list,
@@ -3620,6 +3625,7 @@ button,
   .coaches__item {
     width: 47.3%;
     height: 38.2%;
+    margin-bottom: -8px;
   }
 }
 @media (max-width: 767px) {
@@ -3672,8 +3678,7 @@ button,
 @media (max-width: 1199px) {
   .coaches__text {
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    padding: 25px;
-    padding-left: 31px;
+    padding: 25px 25px 32px 31px;
   }
 }
 
@@ -3803,7 +3808,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages .container {
-    padding: 93px 5.7% 90px;
+    padding: 96px 5.7% 90px;
   }
 }
 @media (max-width: 767px) {
@@ -5210,7 +5215,7 @@ button,
 }
 @media (max-width: 1199px) {
   .review__container {
-    padding: 90px 5px 98px;
+    padding: 95px 5px 98px;
     max-width: 1199px;
   }
 }
@@ -5218,7 +5223,7 @@ button,
   .review__container {
     width: 100%;
     max-width: 767px;
-    padding: 20px 0 70px;
+    padding: 66px 0 70px;
   }
 }
 
@@ -5672,17 +5677,11 @@ button,
   background-color: #ffffff;
   color: #103aae;
 }
-@media (hover: hover) {
-  .contacts__user button:hover:not(.focus-visible) {
-    background-color: #ffffff;
-    color: #103aae;
-  }
-}
-.contacts__user button .focus-visible:focus {
+.contacts__user button:hover, .contacts__user button:focus {
   background-color: #ffffff;
   color: #103aae;
 }
-.contacts__user button:active {
+.contacts__user button:active, .contacts__user button:active:not(.focus-visible) {
   background-color: #ffffff;
   color: #102654;
 }
@@ -5732,7 +5731,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts__company .container {
-    padding: 58px 15px 60px;
+    padding: 54px 15px 60px;
     width: 320px;
   }
 }

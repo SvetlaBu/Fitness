@@ -13,7 +13,7 @@
 
   @include vp-1199 {
     padding: 0 0 91px;
-    padding-bottom: 96px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
@@ -56,11 +56,11 @@
   padding: 0 96px;
 
   @include vp-1199 {
-    padding: 0 105px;
+    padding: 0 101px;
   }
 
   @include vp-767 {
-    padding: 0 38px;
+    padding: 0 45px;
   }
 }
 
@@ -176,6 +176,16 @@
 
 .coaches__slider {
   width: 100%;
+  height: auto;
+
+  @include vp-1199 {
+    width: 99%;
+  }
+
+  @include vp-374 {
+    width: 100%;
+    height: 278px;
+  }
 }
 
 .coaches__list,
@@ -202,6 +212,7 @@
   @include vp-1199 {
     width: 47.3%;
     height: 38.2%;
+    margin-bottom: -8px;
   }
 
   @include vp-767 {
@@ -240,8 +251,7 @@
 
   @include vp-1199 {
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    padding: 25px;
-    padding-left: 31px;
+    padding: 25px 25px 32px 31px;
   }
 }
 

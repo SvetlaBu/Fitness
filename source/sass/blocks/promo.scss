@@ -15,7 +15,7 @@
   min-height: 500px;
 
   @include vp-1199 {
-    padding: 112px 46px 101px;
+    padding: 112px 46px 97px;
     grid-template-columns: 43% 57%;
     min-height: 292px;
     min-width: 768px;
@@ -191,7 +191,7 @@
     margin-top: auto;
     font-size: 10px;
     line-height: 12px;
-    padding: 12px;
+    padding: 14px;
     border: 2px solid $color-default-white;
   }
 
@@ -213,7 +213,8 @@
     border: 2px solid $color-default-white;
   }
 
-  &:active {
+  &:active,
+  &:active:not(.focus-visible) {
     background-color: $color-default-white;
     color: $color-sapphire;
   }
