@@ -1613,9 +1613,16 @@ button,
   align-self: start;
 }
 
-.btn--hero .focus-visible:focus {
+.btn--hero:hover,
+.btn--hero:focus {
   background-color: #ffffff;
   color: #103aae;
+}
+
+.btn--hero:active,
+.btn--hero:active:not(.focus-visible) {
+  background-color: #ffffff;
+  color: #102654;
   opacity: 1;
 }
 
@@ -1628,12 +1635,6 @@ button,
   -moz-appearance: none;
   appearance: none;
   border: none;
-}
-
-.btn--hero:active {
-  background-color: #ffffff;
-  color: #102654;
-  opacity: 1;
 }
 
 .btn--hero:disabled {
@@ -2753,7 +2754,8 @@ button,
   border: 2px solid #ffffff;
 }
 
-.promo__link:active {
+.promo__link:active,
+.promo__link:active:not(.focus-visible) {
   background-color: #ffffff;
   color: #102654;
 }
@@ -2899,6 +2901,7 @@ button,
 
 .coaches__slider {
   width: 100%;
+  height: auto;
 }
 
 .coaches__list,
@@ -2971,6 +2974,7 @@ button,
   width: 100%;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
   text-align: center;
   font-weight: 700;
@@ -4207,12 +4211,14 @@ button,
   color: #103aae;
 }
 
-.contacts__user button .focus-visible:focus {
+.contacts__user button:hover,
+.contacts__user button:focus {
   background-color: #ffffff;
   color: #103aae;
 }
 
-.contacts__user button:active {
+.contacts__user button:active,
+.contacts__user button:active:not(.focus-visible) {
   background-color: #ffffff;
   color: #102654;
 }
@@ -4398,6 +4404,7 @@ button,
   }
 
   .main-footer .logo {
+    margin-top: 6px;
     width: 82px;
   }
 
@@ -4540,7 +4547,7 @@ button,
   }
 
   .promo__container {
-    padding: 112px 46px 101px;
+    padding: 112px 46px 97px;
     -ms-grid-columns: 43% 57%;
     grid-template-columns: 43% 57%;
     min-height: 292px;
@@ -4601,7 +4608,7 @@ button,
     margin-top: auto;
     font-size: 10px;
     line-height: 12px;
-    padding: 12px;
+    padding: 14px;
     border: 2px solid #ffffff;
   }
 
@@ -4615,7 +4622,7 @@ button,
 
   .coaches__container {
     padding: 0 0 91px;
-    padding-bottom: 96px;
+    padding-bottom: 100px;
   }
 
   .coaches__title {
@@ -4628,7 +4635,7 @@ button,
   }
 
   .coaches__inner {
-    padding: 0 105px;
+    padding: 0 101px;
   }
 
   .coaches__buttons {
@@ -4639,15 +4646,19 @@ button,
     margin-top: 15.8%;
   }
 
+  .coaches__slider {
+    width: 99%;
+  }
+
   .coaches__item {
     width: 47.3%;
     height: 38.2%;
+    margin-bottom: -8px;
   }
 
   .coaches__text {
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    padding: 25px;
-    padding-left: 31px;
+    padding: 25px 25px 32px 31px;
   }
 
   .coaches__text h3 {
@@ -4669,7 +4680,7 @@ button,
   }
 
   .advantages .container {
-    padding: 93px 5.7% 90px;
+    padding: 96px 5.7% 90px;
   }
 
   .advantages__title {
@@ -4890,7 +4901,7 @@ button,
   }
 
   .review__container {
-    padding: 90px 5px 98px;
+    padding: 95px 5px 98px;
     max-width: 1199px;
   }
 
@@ -5293,7 +5304,7 @@ button,
   }
 
   .coaches__inner {
-    padding: 0 38px;
+    padding: 0 45px;
   }
 
   .coaches__buttons {
@@ -5621,7 +5632,7 @@ button,
   .review__container {
     width: 100%;
     max-width: 767px;
-    padding: 20px 0 70px;
+    padding: 66px 0 70px;
   }
 
   .review__title {
@@ -5743,7 +5754,7 @@ button,
   }
 
   .contacts__company .container {
-    padding: 58px 15px 60px;
+    padding: 54px 15px 60px;
     width: 320px;
   }
 
@@ -5809,15 +5820,14 @@ button,
   .info__text p {
     text-align: start;
   }
+
+  .coaches__slider {
+    width: 100%;
+    height: 278px;
+  }
 }
 
 @media (hover: hover) {
-  .btn--hero:hover:not(.focus-visible) {
-    background-color: #ffffff;
-    color: #103aae;
-    opacity: 1;
-  }
-
   .main-header .logo:hover:not(.focus-visible) {
     opacity: 0.7;
   }
@@ -5887,10 +5897,5 @@ button,
 
   .showcase__action--accent .showcase__link:hover:not(.focus-visible) {
     opacity: 0.8;
-  }
-
-  .contacts__user button:hover:not(.focus-visible) {
-    background-color: #ffffff;
-    color: #103aae;
   }
 }
