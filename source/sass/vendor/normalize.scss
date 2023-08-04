@@ -263,7 +263,8 @@ button:focus-visible,
 [type="button"]:focus-visible,
 [type="reset"]:focus-visible,
 [type="submit"]:focus-visible {
-  outline: 1px solid #102654;
+  outline: none;
+  border: none;
 }
 
 
@@ -271,7 +272,8 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px solid #102654;
+  outline: none;
+  border: none;
 }
 
 /**

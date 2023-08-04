@@ -7,7 +7,7 @@
 .review__container {
   overflow: hidden;
   max-width: 58%;
-  padding: 114px 0 120px;
+  padding: 116px 0 120px;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -18,7 +18,7 @@
   @include vp-767 {
     width: 100%;
     max-width: 767px;
-    padding: 66px 0 70px;
+    padding: 86px 0 70px;
   }
 }
 
@@ -94,15 +94,12 @@
 .review__button {
   transition: 0.3s;
   cursor: pointer;
-  height: 20%;
-  margin-top: 13%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  padding: 0  34px;
-
-  @include vp-767 {
-    margin-top: 40%;
-  }
+  padding: 0 34px;
 }
 
 .review__button svg {

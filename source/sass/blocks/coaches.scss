@@ -284,6 +284,7 @@
   transition: 0.6s;
   background-color: rgba(16, 38, 84, 0.89);
   justify-content: flex-start;
+  overflow-y: scroll;
 
   @include vp-1199 {
     padding: 55px 20px 30px 10px;

@@ -94,6 +94,7 @@
   grid-column: 1/2;
   grid-row: 1/-1;
   margin-top: 300px;
+  margin-left: 10%;
   text-align: end;
   width: max-content;
 
@@ -103,28 +104,6 @@
 
   @include vp-767 {
     margin-top: 210px;
-  }
-}
-
-.hero__item a {
-  padding: 10px;
-
-  @include hover-focus {
-    text-decoration: underline;
-    text-decoration-color: $color-default-white;
-    text-underline-offset: 4px;
-  }
-
-  @include active {
-    opacity: 0.3;
-  }
-
-  &:focus-visible {
-    text-decoration: underline;
-    text-decoration-color: $color-default-white;
-    text-underline-offset: 4px;
-    border: none;
-    outline: none;
   }
 }
 
