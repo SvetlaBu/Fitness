@@ -105,7 +105,7 @@
     &:active {
       color: $color-default-white;
 
-      background-image: $linear-blue-to-red;
+      background-image: linear-gradient(to right, #ed0233 0%, #003eb7 100%);
       border: none;
     }
 

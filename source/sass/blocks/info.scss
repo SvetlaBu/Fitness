@@ -8,7 +8,7 @@
 .info .container {
   width: 100%;
   position: relative;
-  padding: 160px 120px 103px 166px;
+  padding: 160px 120px 244px 166px;
   display: grid;
   grid-template-columns: 355px 364px;
   grid-template-rows: 1fr;
@@ -145,14 +145,16 @@
 
 .info__video {
   grid-column: 2/-1;
-  margin-top: -86px;
+  top: 408px;
   width: 364px;
-  position: relative;
+  position: absolute;
   padding-bottom: 62.63%;
   height: 0;
   overflow: hidden;
 
   @include vp-1199 {
+    position: relative;
+    top: 0;
     grid-column: 1/2;
     margin-top: 200px;
     width: 49%;

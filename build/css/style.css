@@ -2334,7 +2334,7 @@ button,
 .info .container {
   width: 100%;
   position: relative;
-  padding: 160px 120px 103px 166px;
+  padding: 160px 120px 244px 166px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 355px 364px;
@@ -2496,15 +2496,17 @@ button,
 
 .info__video {
   grid-column: 2/-1;
-  margin-top: -86px;
+  top: 408px;
   width: 364px;
-  position: relative;
+  position: absolute;
   padding-bottom: 62.63%;
   height: 0;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
   .info__video {
+    position: relative;
+    top: 0;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -2852,8 +2854,6 @@ button,
 }
 
 .offers__item {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
   border: 7px solid;
   background-color: #ffffff;
   border-color: #ffffff;
@@ -2887,6 +2887,7 @@ button,
 .offers__item:focus {
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  outline: none;
   outline-offset: -7px;
   border: 7px solid;
   border-image-source: linear-gradient(to right, #ed0233 0%, #003eb7 100%);
@@ -4691,8 +4692,8 @@ button,
 }
 .questions__control.is-active, .questions__control:active {
   color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#b80027), to(#003d85));
-  background-image: linear-gradient(to right, #b80027, #003d85 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background-image: linear-gradient(to right, #ed0233 0%, #003eb7 100%);
   border: none;
 }
 .questions__control:disabled {
