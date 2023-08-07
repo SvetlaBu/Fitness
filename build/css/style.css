@@ -4795,6 +4795,7 @@ button,
   border: 1px solid #102654;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 767px) {
   .questions__preview-button {
@@ -4964,8 +4965,6 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   grid-gap: 40px;
 }
 @media (max-width: 1199px) {
