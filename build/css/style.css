@@ -1531,7 +1531,7 @@ button,
   .btn--hero {
     width: 190px;
     padding: 16px;
-    margin: 36px 0 20px 14px;
+    margin: 36px 0 20px 24px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1961,7 +1961,7 @@ button,
 @media (max-width: 1199px) {
   .hero__wrapper span {
     top: -70px;
-    left: 138px;
+    left: 148px;
     font-size: 36px;
     font-weight: 500;
   }
