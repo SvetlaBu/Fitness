@@ -2337,8 +2337,8 @@ button,
   padding: 160px 120px 244px 166px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 355px 364px;
-  grid-template-columns: 355px 364px;
+  -ms-grid-columns: 355px 33.5%;
+  grid-template-columns: 355px 33.5%;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   -webkit-column-gap: 22px;
@@ -2497,7 +2497,7 @@ button,
 .info__video {
   grid-column: 2/-1;
   top: 408px;
-  width: 364px;
+  width: 100%;
   position: absolute;
   padding-bottom: 62.63%;
   height: 0;
